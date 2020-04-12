@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using ViciousMockeryGenerator.Data;
 
 namespace ViciousMockeryGenerator.Data
 {
@@ -16,7 +13,7 @@ namespace ViciousMockeryGenerator.Data
 
         private static readonly string[] Adjectives = new[]
       {
-            "sick", "dumb", "rusty", "corny", "fidgety", "impatient", "dripping", "sweaty", "utterly", "useless", "complete", 
+            "sick", "dumb", "rusty", "corny", "fidgety", "impatient", "dripping", "sweaty", "utter", "useless", "complete", 
             "crappy", "controlling"
         };
 
@@ -52,7 +49,7 @@ namespace ViciousMockeryGenerator.Data
                 article2 = "a";
             }
 
-            var viciousmock = new ViciousMockery() { Insult = $"You're {article1} {adj1} {Adjectives[a2Index]} {Nouns[n1Index]} because you're {article2} {Nouns[n2Index]}!!!" };
+            var viciousmock = new ViciousMockery() { Insult = $"You're {article1} {adj1} {Adjectives[a2Index]} {Nouns[n1Index]} because you are {article2} {Nouns[n2Index]}!!!" };
             return Task.FromResult(viciousmock);
         }
 
