@@ -1,0 +1,38 @@
+﻿@page "/"
+
+@using ViciousMockeryGenerator.Data;
+@inject ViciousService ViciousService
+
+
+
+<h1>Vicious Mockery Insult Generator</h1>
+<hr />
+
+<div class="container">
+    <div class="d-flex justify-content-center mt-5">
+        <img src="/images/bard.png" />
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+        <h2>@viciousMockery.Insult</h2>
+    </div>
+    <div class="d-flex justify-content-center m-5">
+        <button class="btn btn-primary" @onclick="GetVicious">Generate Vicious Mock!</button>
+    </div>
+</div>
+
+
+
+
+@code {
+    private ViciousMockery viciousMockery;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetVicious();
+    }
+
+    protected async Task GetVicious()
+    {
+        viciousMockery = await ViciousService.GetVicious();
+    }
+}
