@@ -1,0 +1,47 @@
+﻿@page "/critical-fail"
+
+@using ViciousMockeryGenerator.Data;
+@inject CriticalFailService CriticalFailService;
+
+<h3>Critical Fail</h3>
+
+<div class="container">
+    <div class="d-flex justify-content-center mt-5">
+        <h4>@critFail.Description</h4>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button class="btn btn-primary m-4" @onclick="GenerateMelee">Melee Failure!</button>
+        <button class="btn btn-primary m-4" @onclick="GenerateRanged">Ranged Failure!</button>
+        <button class="btn btn-primary m-4" @onclick="GenerateSpell">Spell Failure!</button>
+    </div>
+</div>
+<div>
+    <a target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-TpNHenduO3SY3_subiyITGRPWu6zdobGPF6UAF4XWE0VNEyrW3h-FkZTzzb_86OWEVCNd8Yap_sG/pubhtml?gid=0&single=true&fbclid=IwAR1UDEZlCoKNYb4Fn9UlRP_8m7ExOQM5nG8MKgyHA-743pBnkMngqAWuK1o"></a>
+</div>
+@code {
+
+    private CriticalFailure critFail;
+
+    protected override async Task OnInitializedAsync()
+    {
+        critFail = await Task.FromResult(new CriticalFailure());
+    }
+
+    protected async Task GenerateMelee()
+    {
+        critFail = await CriticalFailService.GetMelee();
+    }
+
+    protected async Task GenerateRanged()
+    {
+        critFail = await CriticalFailService.GetRanged();
+    }
+
+    protected async Task GenerateSpell()
+    {
+        critFail = await CriticalFailService.GetSpell();
+    }
+
+
+
+}

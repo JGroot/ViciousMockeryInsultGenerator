@@ -1,0 +1,65 @@
+[
+  {
+    "Roll": 1,
+    "DamageCategory": "ranged",
+    "FailureCategory": "basicMiss",
+    "Description": "That had to hurt... but the target seems unphased.",
+    "Comment": ""
+  },
+  {
+    "Roll": 2,
+    "DamageCategory": "ranged",
+    "FailureCategory": "basicMiss",
+    "Description": "That had to hurt... but you only see the slightest scratch/scorch/bruise.",
+    "Comment": ""
+  },
+  {
+    "Roll": 3,
+    "DamageCategory": "ranged",
+    "FailureCategory": "basicMiss",
+    "Description": "That had to hurt... but the target ignores the damage completely",
+    "Comment": ""
+  },
+  {
+    "Roll": 4,
+    "DamageCategory": "ranged",
+    "FailureCategory": "basicMiss",
+    "Description": "So close!",
+    "Comment": ""
+  },
+  {
+    "Roll": 5,
+    "DamageCategory": "ranged",
+    "FailureCategory": "basicMiss",
+    "Description": "Missed it by that much...",
+    "Comment": ""
+  },
+  {
+    "Roll": 6,
+    "DamageCategory": "ranged",
+    "FailureCategory": "basicMiss",
+    "Description": "Not even close. The target doesn't care.",
+    "Comment": ""
+  },
+  {
+    "Roll": 7,
+    "DamageCategory": "ranged",
+    "FailureCategory": "basicMiss",
+    "Description": "Not even close. The target is aggravated.",
+    "Comment": ""
+  },
+  {
+    "Roll": 8,
+    "DamageCategory": "ranged",
+    "FailureCategory": "basicMiss",
+    "Description": "Not even close. The target is not amused.",
+    "Comment": ""
+  },
+  {
+    "Roll": 9,
+    "DamageCategory": "ranged",
+    "FailureCategory": "basicMiss",
+    "Description": "Not even close. The target is amused",
+    "Comment": ""
+  }
+]

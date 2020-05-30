@@ -1,0 +1,135 @@
+[
+  {
+    "Roll": 1,
+    "DamageCategory": "melee",
+    "FailureCategory": "basicMiss",
+    "Description": "That had to hurt... but the target seems unphased.",
+    "Comment": ""
+  },
+  {
+    "Roll": 2,
+    "DamageCategory": "melee",
+    "FailureCategory": "basicMiss",
+    "Description": "That had to hurt... but you only see the slightest scratch/scorch/bruise.",
+    "Comment": ""
+  },
+  {
+    "Roll": 3,
+    "DamageCategory": "melee",
+    "FailureCategory": "basicMiss",
+    "Description": "That had to hurt... but the target ignores the damage completely.",
+    "Comment": ""
+  },
+  {
+    "Roll": 4,
+    "DamageCategory": "melee",
+    "FailureCategory": "basicMiss",
+    "Description": "So close!",
+    "Comment": ""
+  },
+  {
+    "Roll": 5,
+    "DamageCategory": "melee",
+    "FailureCategory": "basicMiss",
+    "Description": "Missed it by that much...",
+    "Comment": ""
+  },
+  {
+    "Roll": 6,
+    "DamageCategory": "melee",
+    "FailureCategory": "basicMiss",
+    "Description": "Not even close. The target doesn't care.",
+    "Comment": ""
+  },
+  {
+    "Roll": 7,
+    "DamageCategory": "melee",
+    "FailureCategory": "basicMiss",
+    "Description": "Not even close. The target is aggravated.",
+    "Comment": ""
+  },
+  {
+    "Roll": 8,
+    "DamageCategory": "melee",
+    "FailureCategory": "basicMiss",
+    "Description": "Not even close. The target is not amused.",
+    "Comment": ""
+  },
+  {
+    "Roll": 9,
+    "DamageCategory": "melee",
+    "FailureCategory": "basicMiss",
+    "Description": "Not even close. The target is amused",
+    "Comment": ""
+  },
+  {
+    "Roll": 10,
+    "DamageCategory": "melee",
+    "FailureCategory": "opponent",
+    "Description": "The target saw it coming and feinted to throw off your aim.",
+    "Comment": ""
+  },
+  {
+    "Roll": 11,
+    "DamageCategory": "melee",
+    "FailureCategory": "opponent",
+    "Description": "The target seems to have trained against your fighting style. They were ready this time.",
+    "Comment": ""
+  },
+  {
+    "Roll": 12,
+    "DamageCategory": "melee",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 5. On a fail, the target disarms you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 13,
+    "DamageCategory": "melee",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 8. On a fail, the target disarms you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 14,
+    "DamageCategory": "melee",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 12. On a fail, the target disarms you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 15,
+    "DamageCategory": "melee",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 16. On a fail, the target disarms you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 16,
+    "DamageCategory": "melee",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 20. On a fail, the target disarms you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 17,
+    "DamageCategory": "melee",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 12. On a fail, the target takes your weapon.",
+    "Comment": ""
+  },
+  {
+    "Roll": 18,
+    "DamageCategory": "melee",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 16. On a fail, the target takes your weapon.",
+    "Comment": ""
+  },
+  {
+    "Roll": 19,
+    "DamageCategory": "melee",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 20. On a fail, the target takes your weapon.",
+    "Comment": ""
+  }
+]

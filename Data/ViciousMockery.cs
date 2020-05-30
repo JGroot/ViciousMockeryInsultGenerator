@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace ViciousMockeryGenerator.Data
+﻿namespace ViciousMockeryGenerator.Data
 {
     public class ViciousMockery
     {
