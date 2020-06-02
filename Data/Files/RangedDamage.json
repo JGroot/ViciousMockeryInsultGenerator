@@ -61,5 +61,642 @@
     "FailureCategory": "basicMiss",
     "Description": "Not even close. The target is amused",
     "Comment": ""
+  },
+  {
+    "Roll": 10,
+    "DamageCategory": "ranged",
+    "FailureCategory": "opponent",
+    "Description": "The target saw it coming and feinted to throw off your aim.",
+    "Comment": ""
+  },
+  {
+    "Roll": 11,
+    "DamageCategory": "ranged",
+    "FailureCategory": "opponent",
+    "Description": "The target seems to have trained against your fighting style. They were ready this time.",
+    "Comment": ""
+  },
+  {
+    "Roll": 12,
+    "DamageCategory": "ranged",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 5. On a fail, the target disarms you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 13,
+    "DamageCategory": "ranged",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 8. On a fail, the target disarms you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 14,
+    "DamageCategory": "ranged",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 12. On a fail, the target disarms you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 15,
+    "DamageCategory": "ranged",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 16. On a fail, the target disarms you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 16,
+    "DamageCategory": "ranged",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 20. On a fail, the target disarms you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 17,
+    "DamageCategory": "ranged",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 12. On a fail, the target takes your weapon.",
+    "Comment": ""
+  },
+  {
+    "Roll": 18,
+    "DamageCategory": "ranged",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 16. On a fail, the target takes your weapon.",
+    "Comment": ""
+  },
+  {
+    "Roll": 19,
+    "DamageCategory": "ranged",
+    "FailureCategory": "opponent",
+    "Description": "Roll a save DC 20. On a fail, the target takes your weapon.",
+    "Comment": ""
+  },
+  {
+    "Roll": 20,
+    "DamageCategory": "ranged",
+    "FailureCategory": "surroundings",
+    "Description": "Your footing gives way and throws off your attack.",
+    "Comment": ""
+  },
+  {
+    "Roll": 21,
+    "DamageCategory": "ranged",
+    "FailureCategory": "surroundings",
+    "Description": "\tYour footing gives way and throws off your attack. Roll a save DC 8 or fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 22,
+    "DamageCategory": "ranged",
+    "FailureCategory": "surroundings",
+    "Description": "Your footing gives way and throws off your attack. Roll a save DC 12 or fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 23,
+    "DamageCategory": "ranged",
+    "FailureCategory": "surroundings",
+    "Description": "Your footing gives way and throws off your attack. Roll a save DC 16 or fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 24,
+    "DamageCategory": "ranged",
+    "FailureCategory": "surroundings",
+    "Description": "Your footing gives way and throws off your attack. Roll a save DC 20 or fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 25,
+    "DamageCategory": "ranged",
+    "FailureCategory": "surroundings",
+    "Description": "Your weapon strikes a nearby object. Roll a Strength check DC 16 to free your weapon with a bonus action.",
+    "Comment": "If a tool such as a bow is used to launch a projectile, the tool is what is stuck."
+  },
+  {
+    "Roll": 26,
+    "DamageCategory": "ranged",
+    "FailureCategory": "surroundings",
+    "Description": "Your weapon strikes a nearby object. Roll a Strength check DC 16 to free your weapon with a bonus action.",
+    "Comment": "If a tool such as a bow is used to launch a projectile, the tool is what is stuck."
+  },
+  {
+    "Roll": 27,
+    "DamageCategory": "ranged",
+    "FailureCategory": "surroundings",
+    "Description": "Your weapon strikes a nearby object. Roll a Strength check DC 16 to free your weapon with a bonus action.",
+    "Comment": "If a tool such as a bow is used to launch a projectile, the tool is what is stuck."
+  },
+  {
+    "Roll": 28,
+    "DamageCategory": "ranged",
+    "FailureCategory": "surroundings",
+    "Description": "The atmosphere gunks up your launching tool; or makes your hand-launched projectile greasy.",
+    "Comment": ""
+  },
+  {
+    "Roll": 29,
+    "DamageCategory": "ranged",
+    "FailureCategory": "surroundings",
+    "Description": "The atmosphere gunks up your launching tool; or makes your hand-launched projectile greasy.",
+    "Comment": ""
+  },
+  {
+    "Roll": 30,
+    "DamageCategory": "ranged",
+    "FailureCategory": "contested",
+    "Description": "The target catches your projectile. If they have the appropriate launching tool, they will attack with the ammo as a bonus action on their next turn. If they do not have the appropriate launching tool, make an improvised ranged attack against the attacker with the ammo as a reaction. If the projectile does not require a launching tool, make a ranged attack against the attacker as a reaction. The attack deals half damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 31,
+    "DamageCategory": "ranged",
+    "FailureCategory": "contested",
+    "Description": "The target catches your projectile. If they have the appropriate launching tool, they will attack with the ammo as a bonus action on their next turn. If they do not have the appropriate launching tool, make an improvised ranged attack against the attacker with the ammo as a reaction. If the projectile does not require a launching tool, make a ranged attack against the attacker as a reaction. The attack deals half damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 32,
+    "DamageCategory": "ranged",
+    "FailureCategory": "contested",
+    "Description": "The target catches your projectile. If they have the appropriate launching tool, they will attack with the ammo as a bonus action on their next turn. If they do not have the appropriate launching tool, make an improvised ranged attack against the attacker with the ammo as a reaction. If the projectile does not require a launching tool, make a ranged attack against the attacker as a reaction. The attack deals half damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 33,
+    "DamageCategory": "ranged",
+    "FailureCategory": "contested",
+    "Description": "The target catches your projectile. If they have the appropriate launching tool, they will attack with the ammo as a bonus action on their next turn. If they do not have the appropriate launching tool, make an improvised ranged attack against the attacker with the ammo as a reaction. If the projectile does not require a launching tool, make a ranged attack against the attacker as a reaction. The attack deals half damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 34,
+    "DamageCategory": "ranged",
+    "FailureCategory": "contested",
+    "Description": "The target catches your projectile. If they have the appropriate launching tool, they will attack with the ammo as a bonus action on their next turn. If they do not have the appropriate launching tool, make an improvised ranged attack against the attacker with the ammo as a reaction. If the projectile does not require a launching tool, make a ranged attack against the attacker as a reaction. The attack deals half damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 35,
+    "DamageCategory": "ranged",
+    "FailureCategory": "contested",
+    "Description": "The target catches your projectile. If they have the appropriate launching tool, they will attack with the ammo as a bonus action on their next turn. If they do not have the appropriate launching tool, make an improvised ranged attack against the attacker with the ammo as a reaction. If the projectile does not require a launching tool, make a ranged attack against the attacker as a reaction. The attack deals half damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 36,
+    "DamageCategory": "ranged",
+    "FailureCategory": "contested",
+    "Description": "The target catches your projectile. If they have the appropriate launching tool, they will attack with the ammo as a bonus action on their next turn. If they do not have the appropriate launching tool, make an improvised ranged attack against the attacker with the ammo as a reaction. If the projectile does not require a launching tool, make a ranged attack against the attacker as a reaction. The attack deals half damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 37,
+    "DamageCategory": "ranged",
+    "FailureCategory": "contested",
+    "Description": "The target catches your projectile. If they have the appropriate launching tool, they will attack with the ammo as a bonus action on their next turn. If they do not have the appropriate launching tool, make an improvised ranged attack against the attacker with the ammo as a reaction. If the projectile does not require a launching tool, make a ranged attack against the attacker as a reaction. The attack deals half damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 38,
+    "DamageCategory": "ranged",
+    "FailureCategory": "contested",
+    "Description": "The target catches your projectile. If they have the appropriate launching tool, they will attack with the ammo as a bonus action on their next turn. If they do not have the appropriate launching tool, make an improvised ranged attack against the attacker with the ammo as a reaction. If the projectile does not require a launching tool, make a ranged attack against the attacker as a reaction. The attack deals half damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 39,
+    "DamageCategory": "ranged",
+    "FailureCategory": "contested",
+    "Description": "The target catches your projectile. If they have the appropriate launching tool, they will attack with the ammo as a bonus action on their next turn. If they do not have the appropriate launching tool, make an improvised ranged attack against the attacker with the ammo as a reaction. If the projectile does not require a launching tool, make a ranged attack against the attacker as a reaction. The attack deals half damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 40,
+    "DamageCategory": "ranged",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "The target stirs some memory. Roll a WIS save DC 10 + 1 per page of the character's backstory or become charmed/frightened until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 41,
+    "DamageCategory": "ranged",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "The target really looks tough. Roll a CON save DC 10 + 2 for every hit dice higher than you the target has (-2 for every hit dice less). On a fail, become frightened until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 42,
+    "DamageCategory": "ranged",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "The target looks really confident. Roll an INT save DC 10 + target's INT modifier. On a fail, become frightened until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 43,
+    "DamageCategory": "ranged",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "Light glimmers off something metal on your target. Roll a CON save DC 10 or become blinded until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 44,
+    "DamageCategory": "ranged",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "Light glimmers off something metal on your target. Roll a CON save DC 12 or become blinded until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 45,
+    "DamageCategory": "ranged",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "Light glimmers off something metal on your target. Roll a CON save DC 16 or become blinded until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 46,
+    "DamageCategory": "ranged",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "Light glimmers off something metal on your target. Roll a CON save DC 20 or become blinded until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 47,
+    "DamageCategory": "ranged",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "You move a little too fast, you hit yourself with your weapon. Roll a CON save DC 10 or become stunned until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 48,
+    "DamageCategory": "ranged",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "You move a little too fast, you hit yourself with your weapon. Roll a CON save DC 16 or become stunned until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 49,
+    "DamageCategory": "ranged",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "You move a little too fast, you hit yourself with your weapon. Roll a CON save DC 20 or become stunned until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 50,
+    "DamageCategory": "ranged",
+    "FailureCategory": "wrongTarget",
+    "Description": "Your projectile is deflected, but your power is not diffused. Your projectile deals half damage without modifiers against a random space near your intended target.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 51,
+    "DamageCategory": "ranged",
+    "FailureCategory": "wrongTarget",
+    "Description": "Your projectile is deflected, but your power is not diffused. Your projectile deals half damage without modifiers against a random space near your intended target.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 52,
+    "DamageCategory": "ranged",
+    "FailureCategory": "wrongTarget",
+    "Description": "Your projectile is deflected, but your power is not diffused. Your projectile deals half damage without modifiers against a random space near your intended target.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 53,
+    "DamageCategory": "ranged",
+    "FailureCategory": "wrongTarget",
+    "Description": "Your projectile is deflected, but your power is not diffused. Your projectile deals 3/4 damage without modifiers against a random space near your intended target.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 54,
+    "DamageCategory": "ranged",
+    "FailureCategory": "wrongTarget",
+    "Description": "Your projectile is deflected, but your power is not diffused. Your projectile deals 3/4 damage without modifiers against a random space near your intended target.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 55,
+    "DamageCategory": "ranged",
+    "FailureCategory": "wrongTarget",
+    "Description": "Your projectile is deflected, but your power is not diffused. Your projectile deals 3/4 damage without modifiers against a random space near your intended target.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 56,
+    "DamageCategory": "ranged",
+    "FailureCategory": "wrongTarget",
+    "Description": "Your projectile is deflected, but your power is not diffused. Your projectile deals full damage without modifiers against a random space near your intended target.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 57,
+    "DamageCategory": "ranged",
+    "FailureCategory": "wrongTarget",
+    "Description": "Your projectile is deflected, but your power is not diffused. Your projectile deals full damage without modifiers against a random space near your intended target.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 58,
+    "DamageCategory": "ranged",
+    "FailureCategory": "wrongTarget",
+    "Description": "Your projectile is deflected, but your power is not diffused. Your projectile deals full damage without modifiers against a random space near your intended target.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 59,
+    "DamageCategory": "ranged",
+    "FailureCategory": "wrongTarget",
+    "Description": "Your projectile is deflected, but your power is not diffused. Your projectile deals half damage after modifiers against a random space near your intended target.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 60,
+    "DamageCategory": "ranged",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
+    "Comment": ""
+  },
+  {
+    "Roll": 61,
+    "DamageCategory": "ranged",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
+    "Comment": ""
+  },
+  {
+    "Roll": 62,
+    "DamageCategory": "ranged",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
+    "Comment": ""
+  },
+  {
+    "Roll": 63,
+    "DamageCategory": "ranged",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
+    "Comment": ""
+  },
+  {
+    "Roll": 64,
+    "DamageCategory": "ranged",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
+    "Comment": ""
+  },
+  {
+    "Roll": 65,
+    "DamageCategory": "ranged",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
+    "Comment": ""
+  },
+  {
+    "Roll": 66,
+    "DamageCategory": "ranged",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
+    "Comment": ""
+  },
+  {
+    "Roll": 67,
+    "DamageCategory": "ranged",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
+    "Comment": ""
+  },
+  {
+    "Roll": 68,
+    "DamageCategory": "ranged",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
+    "Comment": ""
+  },
+  {
+    "Roll": 69,
+    "DamageCategory": "ranged",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
+    "Comment": ""
+  },
+  {
+    "Roll": 70,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterMovement",
+    "Description": "The target disengages and may move up to 10 feet in any direction as a reaction.",
+    "Comment": ""
+  },
+  {
+    "Roll": 71,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterMovement",
+    "Description": "Roll a contested STR check with your target. On a fail, the target moves you 5 feet in a random direction.",
+    "Comment": ""
+  },
+  {
+    "Roll": 72,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterMovement",
+    "Description": "Roll a contested STR check with your target. On a fail, the target moves you 10 feet in a random direction.",
+    "Comment": ""
+  },
+  {
+    "Roll": 73,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterMovement",
+    "Description": "Roll a contested STR check with your target. On a fail, the target moves you 15 feet in a random direction; on a save, the target moves you only 5 feet.",
+    "Comment": ""
+  },
+  {
+    "Roll": 74,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterMovement",
+    "Description": "Roll a contested STR check with your target. On a fail, the target moves you 5 feet in a direction advantageous to its allies.",
+    "Comment": ""
+  },
+  {
+    "Roll": 75,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterMovement",
+    "Description": "Roll a contested STR check with your target. On a fail, the target moves you up to 10 feet in a direction advantageous to its allies.",
+    "Comment": ""
+  },
+  {
+    "Roll": 76,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterMovement",
+    "Description": "Roll a contested STR check with your target. On a fail, the target moves you up to 15 feet in a direction advantageous to its allies; on a save, the target moves you only 5 feet.",
+    "Comment": ""
+  },
+  {
+    "Roll": 77,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterMovement",
+    "Description": "Roll a contested STR check with your target. On a fail, the target moves you up to 5 feet in a direction advantageous to its allies. Roll a Dex save DC10. On a fail, you fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 78,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterMovement",
+    "Description": "Roll a contested STR check with your target. On a fail, the target moves you up to 10 feet in a direction advantageous to its allies. Roll a Dex save DC15. On a fail, you fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 79,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterMovement",
+    "Description": "Roll a contested STR check with your target. On a fail, the target moves you up to 15 feet in a direction advantageous to its allies; on a save, the target moves you only 5 feet. Roll a Dex save DC20. On a fail, you fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 80,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterActions",
+    "Description": "Roll a contested STR check with your target. On a fail, the target disarms you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 81,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterActions",
+    "Description": "Roll a contested STR check with your target. On a fail, the target grapples you.",
+    "Comment": ""
+  },
+  {
+    "Roll": 82,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterActions",
+    "Description": "Roll a contested STR check with your target. On a fail, the target puts you in a hold, you become restrained.",
+    "Comment": ""
+  },
+  {
+    "Roll": 83,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterActions",
+    "Description": "The target grabs a random item which is not your armor, shield, or equipped weapon. The target is in possession of that item.",
+    "Comment": ""
+  },
+  {
+    "Roll": 84,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterActions",
+    "Description": "Roll a DEX save DC 20. On a fail, the target trips you as a reaction. You fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 85,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterActions",
+    "Description": "Roll a CON save DC 20. On a fail, the target punches your ear. You become incapacitated.",
+    "Comment": ""
+  },
+  {
+    "Roll": 86,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterActions",
+    "Description": "Roll a CON save DC 20. On a fail, the target punches you in the eyes. You become blinded for 1d4 rounds.",
+    "Comment": ""
+  },
+  {
+    "Roll": 87,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat.",
+    "Comment": "The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds."
+  },
+  {
+    "Roll": 88,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat.",
+    "Comment": "The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds."
+  },
+  {
+    "Roll": 89,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat.",
+    "Comment": "The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds."
+  },
+  {
+    "Roll": 90,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, plus a strength modifer. Roll a CON save DC 10+target's STR modifier. On a fail, you become incapacitated until the end of your next turn. Roll a CON save DC 10+target's STR modifier. On a fail, you become incapacitated until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 91,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, plus a strength modifer. Roll a DEX save DC 10+target's STR modifier. On a fail, you fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 92,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, plus a strength modifer. Roll a CON save DC 10+target's STR modifier. On a fail, you become stunned until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 93,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, and an additional 1d4 damage for each 3 levels you have, plus a strength modifer. Roll a CON save DC 10+target's STR modifier. On a fail, you become blinded until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 94,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack with advantage as a reaction. If it hits, deals 1d8 damage, and an additional 1d4 damage for each 3 levels you have, plus a strength modifer. Roll a CON save DC 10+target's STR modifier. On a fail, you become deafened until the end of your next turn.",
+    "Comment": ""
+  },
+  {
+    "Roll": 95,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack with advantage. If it hits, roll a CON Save DC20. On a fail: You feel no pain. Then you realize you're in shock. You see your own eyeball laying on the floor. You have disadvantage to sight-based checks for 1d20 days. You have disadvantage on all attacks for 1d4 days.",
+    "Comment": ""
+  },
+  {
+    "Roll": 96,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack with advantage as a reaction with a secret weapon. The attack automatically hits and deals 1d4 damage, plus a strength modifer. Roll a CON save DC 10+target's INT modifier. On a fail, you become poisoned for 1 round + 1 round for every 2 CR of the target.",
+    "Comment": ""
+  },
+  {
+    "Roll": 97,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack with advantage as a reaction. If it hits, the attack deals 2d6 damage, and an additional 1d6 for each 3 levels you have, plus a strength modifer.",
+    "Comment": ""
+  },
+  {
+    "Roll": 98,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy attacks with advantage as a reaction. If it hits, roll a CON save DC 20. On a fail: You feel no pain. Then you realize you're in shock. The enemy has removed your lower leg. You've always wondered what it would be like to lose a leg. I guess now you'll find out. Your movement speed is permanently reduced by 15 feet. A prosthetic leg would restore 10 feet of speed.",
+    "Comment": ""
+  },
+  {
+    "Roll": 99,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy attacks with advantage as a reaction. If it hits, roll a CON save DC 20. On a fail: You feel no pain. Then you realize you're in shock. The enemy has removed your hand. Maybe a blacksmith could forge a prosthetic grip. At least you'll be memorable.",
+    "Comment": ""
+  },
+  {
+    "Roll": 100,
+    "DamageCategory": "ranged",
+    "FailureCategory": "counterAttacks",
+    "Description": "It happens to the best of us, we have a bad day. You leave yourself vulnerable for just a moment. The target deals non-lethal bludgeoning damage equal to 5 + temporary HP + your remaining HP.",
+    "Comment": ""
   }
 ]

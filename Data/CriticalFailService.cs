@@ -11,12 +11,13 @@ namespace ViciousMockeryGenerator.Data
     {
         public Task<CriticalFailure> GetMelee()
         {
-            var rnd = new Random();
-            int roll = rnd.Next(1, 19);
             try
             {
                 var path = Directory.GetCurrentDirectory() + @"\Data\Files\MeleeDamage.json";
                 var json = JsonConvert.DeserializeObject<List<CriticalFailure>>(File.ReadAllText(path));
+
+                var rnd = new Random();
+                int roll = rnd.Next(1, json.Count);
 
                 var result = json.Where(d => d.Roll == roll).FirstOrDefault();
                 return Task.FromResult(result);
