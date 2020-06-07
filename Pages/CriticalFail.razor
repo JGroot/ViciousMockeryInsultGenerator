@@ -1,0 +1,65 @@
+﻿@page "/critical-fail"
+
+@using ViciousMockeryGenerator.Data;
+@using ViciousMockeryGenerator.Extensions;
+@inject CriticalFailService CriticalFailService;
+
+<h3>Critical Fail</h3>
+
+<div class="container">
+ 
+        @if (!string.IsNullOrWhiteSpace(critFail.Description))
+        {
+            <div class="d-flex justify-content-start mt-5">
+                <h4>Damage Type:  @critFail.FailureCategory.ToDescriptionString()</h4>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <img src=@imagePath />
+            </div>
+        }
+
+    <div class="d-flex justify-content-start mt-5">
+        <h4>@critFail.Description</h4>
+    </div>
+    <div class="d-flex justify-content-start mt-5">
+        <p>@critFail.Comment</p>
+    </div>
+    <div class="d-flex justify-content-start">
+        <button class="btn btn-primary m-4" @onclick="GenerateMelee">Melee Failure!</button>
+        <button class="btn btn-primary m-4" @onclick="GenerateRanged">Ranged Failure!</button>
+        <button class="btn btn-primary m-4" @onclick="GenerateSpell">Spell Failure!</button>
+    </div>
+</div>
+<div>
+    <a target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-TpNHenduO3SY3_subiyITGRPWu6zdobGPF6UAF4XWE0VNEyrW3h-FkZTzzb_86OWEVCNd8Yap_sG/pubhtml?gid=0&single=true&fbclid=IwAR1UDEZlCoKNYb4Fn9UlRP_8m7ExOQM5nG8MKgyHA-743pBnkMngqAWuK1o">Reference</a>
+</div>
+@code {
+
+    private CriticalFailure critFail;
+    private string imagePath;
+
+    protected override async Task OnInitializedAsync()
+    {
+        critFail = await Task.FromResult(new CriticalFailure());
+    }
+
+    protected async Task GenerateMelee()
+    {
+        imagePath = @"/images/shortsword.png";
+        critFail = await CriticalFailService.GetMelee();
+    }
+
+    protected async Task GenerateRanged()
+    {
+        imagePath = @"/images/longbow.png";
+        critFail = await CriticalFailService.GetRanged();
+    }
+
+    protected async Task GenerateSpell()
+    {
+        imagePath = @"/images/spell.png";
+        critFail = await CriticalFailService.GetSpell();
+    }
+
+
+}
