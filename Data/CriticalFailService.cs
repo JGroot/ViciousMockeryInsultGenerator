@@ -13,7 +13,7 @@ namespace ViciousMockeryGenerator.Data
         {
             try
             {
-                var path = Directory.GetCurrentDirectory() + @"\Data\Files\MeleeDamage.json";
+                var path = AppContext.BaseDirectory + @"\Data\Files\MeleeDamage.json";
                 var json = JsonConvert.DeserializeObject<List<CriticalFailure>>(File.ReadAllText(path));
 
                 var rnd = new Random();
@@ -37,7 +37,7 @@ namespace ViciousMockeryGenerator.Data
                 var rnd = new Random();
                 int roll = rnd.Next(1, 5);
 
-                var path = Directory.GetCurrentDirectory() + @"\Data\Files\RangedDamage.json";
+                var path = AppContext.BaseDirectory + @"\Data\Files\RangedDamage.json";
                 var json = JsonConvert.DeserializeObject<List<CriticalFailure>>(File.ReadAllText(path));
 
                 var result = json.Where(d => d.Roll == roll).FirstOrDefault();
@@ -57,7 +57,7 @@ namespace ViciousMockeryGenerator.Data
                 var rnd = new Random();
                 int roll = rnd.Next(1, 5);
 
-                var path = Directory.GetCurrentDirectory() + @"\Data\Files\SpellDamage.json";
+                var path = AppContext.BaseDirectory + @"\Data\Files\SpellDamage.json";
                 var json = JsonConvert.DeserializeObject<List<CriticalFailure>>(File.ReadAllText(path));
 
                 var result = json.Where(d => d.Roll == roll).FirstOrDefault();
