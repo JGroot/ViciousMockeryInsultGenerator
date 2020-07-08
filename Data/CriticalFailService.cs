@@ -11,9 +11,10 @@ namespace ViciousMockeryGenerator.Data
     {
         public Task<CriticalFailure> GetMelee()
         {
+            string path = string.Empty;
             try
             {
-                var path = AppContext.BaseDirectory + @"\Data\Files\MeleeDamage.json";
+                path = AppContext.BaseDirectory + @"\Data\Files\MeleeDamage.json";
                 var json = JsonConvert.DeserializeObject<List<CriticalFailure>>(File.ReadAllText(path));
 
                 var rnd = new Random();
@@ -25,7 +26,7 @@ namespace ViciousMockeryGenerator.Data
             catch (Exception ex)
             {
                 return Task.FromResult(
-                    new CriticalFailure() { Description = "Error: " + ex.ToString() } );
+                    new CriticalFailure() { Description = $"Error: {ex.Message}, Path = {path}"  } );
             }
         }
 
