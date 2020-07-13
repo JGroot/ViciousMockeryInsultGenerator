@@ -80,56 +80,56 @@
     "Roll": 12,
     "DamageCategory": "ranged",
     "FailureCategory": "opponent",
-    "Description": "Roll a save DC 5. On a fail, the target disarms you.",
+    "Description": "The projectile sticks in the opponents armor, unharmed. They possess your projectile.",
     "Comment": ""
   },
   {
     "Roll": 13,
     "DamageCategory": "ranged",
     "FailureCategory": "opponent",
-    "Description": "Roll a save DC 8. On a fail, the target disarms you.",
+    "Description": "The projectile sticks in the opponents armor, unharmed. They possess your projectile.",
     "Comment": ""
   },
   {
     "Roll": 14,
     "DamageCategory": "ranged",
     "FailureCategory": "opponent",
-    "Description": "Roll a save DC 12. On a fail, the target disarms you.",
+    "Description": "The projectile sticks in the opponents armor, unharmed. They possess your projectile.",
     "Comment": ""
   },
   {
     "Roll": 15,
     "DamageCategory": "ranged",
     "FailureCategory": "opponent",
-    "Description": "Roll a save DC 16. On a fail, the target disarms you.",
+    "Description": "The projectile sticks in the opponents armor, unharmed. They possess your projectile.",
     "Comment": ""
   },
   {
     "Roll": 16,
     "DamageCategory": "ranged",
     "FailureCategory": "opponent",
-    "Description": "Roll a save DC 20. On a fail, the target disarms you.",
+    "Description": "RThe projectile sticks in the opponents armor, unharmed. They possess your projectile.",
     "Comment": ""
   },
   {
     "Roll": 17,
     "DamageCategory": "ranged",
     "FailureCategory": "opponent",
-    "Description": "Roll a save DC 12. On a fail, the target takes your weapon.",
+    "Description": "The projectile sticks in the opponents armor, unharmed. They possess your projectile.",
     "Comment": ""
   },
   {
     "Roll": 18,
     "DamageCategory": "ranged",
     "FailureCategory": "opponent",
-    "Description": "Roll a save DC 16. On a fail, the target takes your weapon.",
+    "Description": "The projectile sticks in the opponents armor, unharmed. They possess your projectile.",
     "Comment": ""
   },
   {
     "Roll": 19,
     "DamageCategory": "ranged",
     "FailureCategory": "opponent",
-    "Description": "Roll a save DC 20. On a fail, the target takes your weapon.",
+    "Description": "The projectile sticks in the opponents armor, unharmed. They possess your projectile.",
     "Comment": ""
   },
   {
@@ -143,7 +143,7 @@
     "Roll": 21,
     "DamageCategory": "ranged",
     "FailureCategory": "surroundings",
-    "Description": "\tYour footing gives way and throws off your attack. Roll a save DC 8 or fall prone.",
+    "Description": "Your footing gives way and throws off your attack. Roll a save DC 8 or fall prone.",
     "Comment": ""
   },
   {
@@ -486,217 +486,217 @@
     "Roll": 70,
     "DamageCategory": "ranged",
     "FailureCategory": "counterMovement",
-    "Description": "The target disengages and may move up to 10 feet in any direction as a reaction.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 71,
     "DamageCategory": "ranged",
     "FailureCategory": "counterMovement",
-    "Description": "Roll a contested STR check with your target. On a fail, the target moves you 5 feet in a random direction.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 72,
     "DamageCategory": "ranged",
     "FailureCategory": "counterMovement",
-    "Description": "Roll a contested STR check with your target. On a fail, the target moves you 10 feet in a random direction.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 73,
     "DamageCategory": "ranged",
     "FailureCategory": "counterMovement",
-    "Description": "Roll a contested STR check with your target. On a fail, the target moves you 15 feet in a random direction; on a save, the target moves you only 5 feet.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 74,
     "DamageCategory": "ranged",
     "FailureCategory": "counterMovement",
-    "Description": "Roll a contested STR check with your target. On a fail, the target moves you 5 feet in a direction advantageous to its allies.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 75,
     "DamageCategory": "ranged",
     "FailureCategory": "counterMovement",
-    "Description": "Roll a contested STR check with your target. On a fail, the target moves you up to 10 feet in a direction advantageous to its allies.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 76,
     "DamageCategory": "ranged",
     "FailureCategory": "counterMovement",
-    "Description": "Roll a contested STR check with your target. On a fail, the target moves you up to 15 feet in a direction advantageous to its allies; on a save, the target moves you only 5 feet.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 77,
     "DamageCategory": "ranged",
     "FailureCategory": "counterMovement",
-    "Description": "Roll a contested STR check with your target. On a fail, the target moves you up to 5 feet in a direction advantageous to its allies. Roll a Dex save DC10. On a fail, you fall prone.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 78,
     "DamageCategory": "ranged",
     "FailureCategory": "counterMovement",
-    "Description": "Roll a contested STR check with your target. On a fail, the target moves you up to 10 feet in a direction advantageous to its allies. Roll a Dex save DC15. On a fail, you fall prone.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 79,
     "DamageCategory": "ranged",
     "FailureCategory": "counterMovement",
-    "Description": "Roll a contested STR check with your target. On a fail, the target moves you up to 15 feet in a direction advantageous to its allies; on a save, the target moves you only 5 feet. Roll a Dex save DC20. On a fail, you fall prone.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 80,
     "DamageCategory": "ranged",
     "FailureCategory": "counterActions",
-    "Description": "Roll a contested STR check with your target. On a fail, the target disarms you.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 81,
     "DamageCategory": "ranged",
     "FailureCategory": "counterActions",
-    "Description": "Roll a contested STR check with your target. On a fail, the target grapples you.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 82,
     "DamageCategory": "ranged",
     "FailureCategory": "counterActions",
-    "Description": "Roll a contested STR check with your target. On a fail, the target puts you in a hold, you become restrained.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 83,
     "DamageCategory": "ranged",
     "FailureCategory": "counterActions",
-    "Description": "The target grabs a random item which is not your armor, shield, or equipped weapon. The target is in possession of that item.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 84,
     "DamageCategory": "ranged",
     "FailureCategory": "counterActions",
-    "Description": "Roll a DEX save DC 20. On a fail, the target trips you as a reaction. You fall prone.",
+    "Description": "If you attacked with ammo, your projectile breaks on impact and cannot be recovered. If you threw a weapon or improvised weapon, it becomes damaged. All attacks with that weapon must be made with disadvantage until it is repaired.",
     "Comment": ""
   },
   {
     "Roll": 85,
     "DamageCategory": "ranged",
     "FailureCategory": "counterActions",
-    "Description": "Roll a CON save DC 20. On a fail, the target punches your ear. You become incapacitated.",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
     "Comment": ""
   },
   {
     "Roll": 86,
     "DamageCategory": "ranged",
     "FailureCategory": "counterActions",
-    "Description": "Roll a CON save DC 20. On a fail, the target punches you in the eyes. You become blinded for 1d4 rounds.",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
     "Comment": ""
   },
   {
     "Roll": 87,
     "DamageCategory": "ranged",
     "FailureCategory": "counterActions",
-    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat.",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
     "Comment": "The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds."
   },
   {
     "Roll": 88,
     "DamageCategory": "ranged",
     "FailureCategory": "counterActions",
-    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat.",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
     "Comment": "The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds."
   },
   {
     "Roll": 89,
     "DamageCategory": "ranged",
     "FailureCategory": "counterActions",
-    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat.",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
     "Comment": "The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds."
   },
   {
     "Roll": 90,
     "DamageCategory": "ranged",
     "FailureCategory": "counterAttacks",
-    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, plus a strength modifer. Roll a CON save DC 10+target's STR modifier. On a fail, you become incapacitated until the end of your next turn. Roll a CON save DC 10+target's STR modifier. On a fail, you become incapacitated until the end of your next turn.",
+    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, plus a strength modifer. Roll a CON save DC 10+target's STR modifier. On a fail, you become incapacitated until the end of your next turn. Roll a CON save DC 10+target's STR modifier. On a fail, you become incapacitated until the end of your next turn. Roll a CON save DC 10+target's DEX modifier. On a fail, you become incapacitated until the end of your next turn.",
     "Comment": ""
   },
   {
     "Roll": 91,
     "DamageCategory": "ranged",
     "FailureCategory": "counterAttacks",
-    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, plus a strength modifer. Roll a DEX save DC 10+target's STR modifier. On a fail, you fall prone.",
+    "Description": "The enemy gets a ranged attack as a reaction. The attack automatically deals 1d8 damage, plus a DEX modifer. Roll a DEX save DC 10+target's DEX modifier. On a fail, you fall prone.",
     "Comment": ""
   },
   {
     "Roll": 92,
     "DamageCategory": "ranged",
     "FailureCategory": "counterAttacks",
-    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, plus a strength modifer. Roll a CON save DC 10+target's STR modifier. On a fail, you become stunned until the end of your next turn.",
+    "Description": "The enemy gets a ranged attack as a reaction. The attack automatically deals 1d8 damage, plus a DEX modifer. Roll a CON save DC 10+target's DEX modifier. On a fail, you become stunned until the end of your next turn.",
     "Comment": ""
   },
   {
     "Roll": 93,
     "DamageCategory": "ranged",
     "FailureCategory": "counterAttacks",
-    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, and an additional 1d4 damage for each 3 levels you have, plus a strength modifer. Roll a CON save DC 10+target's STR modifier. On a fail, you become blinded until the end of your next turn.",
+    "Description": "The enemy gets a ranged attack as a reaction. If they hit, the attack deals 1d8 damage, and an additional 1d4 damage for each 3 levels you have, plus a DEX modifer. Roll a CON save DC 10+target's DEX modifier. On a fail, you become blinded until the end of your next turn.",
     "Comment": ""
   },
   {
     "Roll": 94,
     "DamageCategory": "ranged",
     "FailureCategory": "counterAttacks",
-    "Description": "The enemy gets an attack with advantage as a reaction. If it hits, deals 1d8 damage, and an additional 1d4 damage for each 3 levels you have, plus a strength modifer. Roll a CON save DC 10+target's STR modifier. On a fail, you become deafened until the end of your next turn.",
+    "Description": "The enemy gets a ranged attack as a reaction. If they hit, the attack deals 1d8 damage, and an additional 1d4 damage for each 3 levels you have, plus a DEX modifer. Roll a CON save DC 10+target's DEX modifier. On a fail, you become deafened until the end of your next turn.",
     "Comment": ""
   },
   {
     "Roll": 95,
     "DamageCategory": "ranged",
     "FailureCategory": "counterAttacks",
-    "Description": "The enemy gets an attack with advantage. If it hits, roll a CON Save DC20. On a fail: You feel no pain. Then you realize you're in shock. You see your own eyeball laying on the floor. You have disadvantage to sight-based checks for 1d20 days. You have disadvantage on all attacks for 1d4 days.",
+    "Description": "The enemy attacks. If they hit, Roll a CON Save DC20. On a fail: You feel no pain. Then you realize you're in shock. You see your own eyeball laying on the floor. You have disadvantage to sight-based checks for 1d20 days. You have disadvantage on all attacks for 1d4 days.",
     "Comment": ""
   },
   {
     "Roll": 96,
     "DamageCategory": "ranged",
     "FailureCategory": "counterAttacks",
-    "Description": "The enemy gets an attack with advantage as a reaction with a secret weapon. The attack automatically hits and deals 1d4 damage, plus a strength modifer. Roll a CON save DC 10+target's INT modifier. On a fail, you become poisoned for 1 round + 1 round for every 2 CR of the target.",
+    "Description": "The enemy gets a ranged attack as a reaction with a special ranged weapon. If they hit, the attack deals 1d4 damage, plus a DEX modifer. Roll a CON save DC 10+target's INT modifier. On a fail, you become poisoned for 1 round + 1 round for every 2 CR of the target.",
     "Comment": ""
   },
   {
     "Roll": 97,
     "DamageCategory": "ranged",
     "FailureCategory": "counterAttacks",
-    "Description": "The enemy gets an attack with advantage as a reaction. If it hits, the attack deals 2d6 damage, and an additional 1d6 for each 3 levels you have, plus a strength modifer.",
+    "Description": "The enemy gets a ranged attack as a reaction. If they hit, the attack deals 2d6 damage, and an additional 1d6 for each 3 levels you have, plus a strength modifer.",
     "Comment": ""
   },
   {
     "Roll": 98,
     "DamageCategory": "ranged",
     "FailureCategory": "counterAttacks",
-    "Description": "The enemy attacks with advantage as a reaction. If it hits, roll a CON save DC 20. On a fail: You feel no pain. Then you realize you're in shock. The enemy has removed your lower leg. You've always wondered what it would be like to lose a leg. I guess now you'll find out. Your movement speed is permanently reduced by 15 feet. A prosthetic leg would restore 10 feet of speed.",
+    "Description": "The enemy attacks from range. If they hit, roll a CON save DC 20. On a fail: You take an arrow to the knee! God, that hurts! Oh, that's gonna have to come off... You've always wondered what it would be like to lose a leg. I guess now you'll find out. Your movement speed is permanently reduced by 15 feet while wounded or without the leg. A prosthetic leg or recovery will restore 10 feet of speed. If you choose not to have the leg removed, roll a CON save DC 20 every hour. On each fail, take 1 necrotic damage.  For each day you fail one of these saves, take 1 point of exhaustion. If you walk on the wounded leg, take one of these CON saves for every 200 feet traveled.  If you go 3 days without failing a CON save, you can keep the leg.",
     "Comment": ""
   },
   {
     "Roll": 99,
     "DamageCategory": "ranged",
     "FailureCategory": "counterAttacks",
-    "Description": "The enemy attacks with advantage as a reaction. If it hits, roll a CON save DC 20. On a fail: You feel no pain. Then you realize you're in shock. The enemy has removed your hand. Maybe a blacksmith could forge a prosthetic grip. At least you'll be memorable.",
+    "Description": "The enemy attacks from range. Roll a CON save DC 20. On a fail: GAH! My wrist! The weapon juts out just below your hand. When you remove the weapon, you take 1 damage per minute. Medicine DC 10 from a character with two hands, fabric, and a stick will reduce the damage to 1 health lost per hour for 1d4 days. You have disadvantage to skills and checks involving that hand for 1d20 days. At least you don't have to lose it. ",
     "Comment": ""
   },
   {
     "Roll": 100,
     "DamageCategory": "ranged",
-    "FailureCategory": "counterAttacks",
-    "Description": "It happens to the best of us, we have a bad day. You leave yourself vulnerable for just a moment. The target deals non-lethal bludgeoning damage equal to 5 + temporary HP + your remaining HP.",
+    "FailureCategory": "ohNo",
+    "Description": "It happens to the best of us, things just go wrong. You loose your footing, fall prone and strike your head. The impact deals non-lethal bludgeoning damage equal to 5 + temporary HP + your remaining HP.",
     "Comment": ""
   }
 ]

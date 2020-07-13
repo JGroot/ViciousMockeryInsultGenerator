@@ -34,12 +34,12 @@ namespace ViciousMockeryGenerator.Data
         public Task<CriticalFailure> GetRanged()
         {
             try
-            {
-                var rnd = new Random();
-                int roll = rnd.Next(1, 5);
-
+            {                
                 var path = AppContext.BaseDirectory + @"/Data/Files/RangedDamage.json";
                 var json = JsonConvert.DeserializeObject<List<CriticalFailure>>(File.ReadAllText(path));
+
+                var rnd = new Random();
+                int roll = rnd.Next(1, json.Count);
 
                 var result = json.Where(d => d.Roll == roll).FirstOrDefault();
                 return Task.FromResult(result);

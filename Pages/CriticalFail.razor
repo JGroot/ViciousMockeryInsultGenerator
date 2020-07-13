@@ -4,24 +4,38 @@
 @using ViciousMockeryGenerator.Extensions;
 @inject CriticalFailService CriticalFailService;
 
-<h3>Critical Fail</h3>
-
+<h1>Critical Fail</h1>
+<div>
+    <p style="font-size:small; color:gray;">
+        Rats! Your player rolled a ONE!  Click on their damage-type to generate how they utterly fail.
+    </p>
+</div>
+<hr/>
 <div class="container">
- 
-        @if (!string.IsNullOrWhiteSpace(critFail.Description))
-        {
-            <div class="d-flex justify-content-start mt-5">
-                <h4>Damage Type:  @critFail.FailureCategory.ToDescriptionString()</h4>
-            </div>
-            <div class="d-flex justify-content-center mt-5">
-                <img src=@imagePath />
-            </div>
-        }
+    @if (string.IsNullOrEmpty(critFail.Description))
+    {
+        <div class="d-flex justify-content-center mt-5 mt-sm-3">
+            <img src=@imagePath />
+        </div>
 
-    <div class="d-flex justify-content-start mt-5">
+    }
+    @if (!string.IsNullOrWhiteSpace(critFail.Description))
+    {
+        <div class="d-flex justify-content-start mt-5 mt-sm-3">
+            <h4>Roll: @critFail.Roll</h4>
+        </div>
+        <div class="d-flex justify-content-start">
+            <h4>Damage Type:  @critFail.FailureCategory.ToDescriptionString()</h4>
+        </div>
+        <div class="d-flex justify-content-center mt-5 mt-sm-3">
+            <img src=@imagePath />
+        </div>
+    }
+
+    <div class="d-flex justify-content-start mt-5 mt-sm-3">
         <h4>@critFail.Description</h4>
     </div>
-    <div class="d-flex justify-content-start mt-5">
+    <div class="d-flex justify-content-start mt-5 mt-sm-3">
         <p>@critFail.Comment</p>
     </div>
     <div class="d-flex justify-content-start">
@@ -29,10 +43,11 @@
         <button class="btn btn-primary m-4" @onclick="GenerateRanged">Ranged Failure!</button>
         <button class="btn btn-primary m-4" @onclick="GenerateSpell">Spell Failure!</button>
     </div>
+    <div class="mt-5 mt-sm-3">
+        Thanks to u/Archaias06 for this <a target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-TpNHenduO3SY3_subiyITGRPWu6zdobGPF6UAF4XWE0VNEyrW3h-FkZTzzb_86OWEVCNd8Yap_sG/pubhtml?gid=0&single=true&fbclid=IwAR1UDEZlCoKNYb4Fn9UlRP_8m7ExOQM5nG8MKgyHA-743pBnkMngqAWuK1o">resource</a>.
+    </div>
 </div>
-<div>
-    <a target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-TpNHenduO3SY3_subiyITGRPWu6zdobGPF6UAF4XWE0VNEyrW3h-FkZTzzb_86OWEVCNd8Yap_sG/pubhtml?gid=0&single=true&fbclid=IwAR1UDEZlCoKNYb4Fn9UlRP_8m7ExOQM5nG8MKgyHA-743pBnkMngqAWuK1o">Reference</a>
-</div>
+
 @code {
 
     private CriticalFailure critFail;
@@ -40,6 +55,7 @@
 
     protected override async Task OnInitializedAsync()
     {
+        imagePath = @"/images/fallen.png";
         critFail = await Task.FromResult(new CriticalFailure());
     }
 
