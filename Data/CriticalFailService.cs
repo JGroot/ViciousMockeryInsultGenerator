@@ -9,67 +9,72 @@ namespace ViciousMockeryGenerator.Data
 {
     public class CriticalFailService
     {
-        public Task<CriticalFailure> GetMelee()
+        public async Task<CriticalFailure> GetMelee()
         {
             string path = string.Empty;
             try
             {
                 path = AppContext.BaseDirectory + @"/Data/Files/MeleeDamage.json";
-                var json = JsonConvert.DeserializeObject<List<CriticalFailure>>(File.ReadAllText(path));
-
-                var rnd = new Random();
-                int roll = rnd.Next(1, json.Count);
-
-                var result = json.Where(d => d.Roll == roll).FirstOrDefault();
-                return Task.FromResult(result);
+                return await GetFailure(path);
             }
             catch (Exception ex)
             {
-                return Task.FromResult(
-                    new CriticalFailure() { Description = $"Error: {ex.Message}, Path = {path}"  } );
+                return new CriticalFailure() { Description = $"Error: {ex.Message}, Path = {path}" };
             }
         }
 
 
-        public Task<CriticalFailure> GetRanged()
+        public async Task<CriticalFailure> GetRanged()
         {
             try
-            {                
+            {
                 var path = AppContext.BaseDirectory + @"/Data/Files/RangedDamage.json";
-                var json = JsonConvert.DeserializeObject<List<CriticalFailure>>(File.ReadAllText(path));
-
-                var rnd = new Random();
-                int roll = rnd.Next(1, json.Count);
-
-                var result = json.Where(d => d.Roll == roll).FirstOrDefault();
-                return Task.FromResult(result);
+                return await GetFailure(path);
             }
             catch (Exception ex)
             {
-                return Task.FromResult(
-                  new CriticalFailure() { Description = "Error: " + ex.ToString() });
+                return new CriticalFailure() { Description = "Error: " + ex.ToString() };
             }
         }
 
-        public Task<CriticalFailure> GetSpell()
+        public async Task<CriticalFailure> GetSpell()
         {
             try
             {
-                var rnd = new Random();
-                int roll = rnd.Next(1, 5);
-
                 var path = AppContext.BaseDirectory + @"/Data/Files/SpellDamage.json";
-                var json = JsonConvert.DeserializeObject<List<CriticalFailure>>(File.ReadAllText(path));
-
-                var result = json.Where(d => d.Roll == roll).FirstOrDefault();
-                return Task.FromResult(result);
+                return await GetFailure(path);
             }
             catch (Exception ex)
             {
-                return Task.FromResult(
-                  new CriticalFailure() { Description = "Error: " + ex.ToString() });
+                return new CriticalFailure() { Description = "Error: " + ex.ToString() };
             }
         }
+
+        private async Task<CriticalFailure> GetFailure(string path)
+        {
+            var json = JsonConvert.DeserializeObject<List<CriticalFailure>>(File.ReadAllText(path));
+            var count = json.Count;
+            var rnd = new Random();
+            int roll = rnd.Next(1, json.Count);
+
+            var result = await Task.Run(() => json.Where(d => d.Roll == roll).FirstOrDefault());
+            if (result == null)
+            {
+                result = SetEmptyResult(roll);
+            }
+            return result;
+        }
+
+        private CriticalFailure SetEmptyResult(int roll)
+            => new CriticalFailure()
+            {
+                Roll = roll,
+                Comment = "No result for roll found.",
+                Description = "Error.",
+                FailureCategory = FailureCategory.None,
+                DamageCategory = DamageCategory.None
+            };
+
     }
 }
 

@@ -61,5 +61,642 @@
     "FailureCategory": "basicMiss",
     "Description": "Not even close. The target is amused",
     "Comment": ""
+  },
+  {
+    "Roll": 10,
+    "DamageCategory": "spell",
+    "FailureCategory": "opponent",
+    "Description": "The target saw it coming and feinted to throw off your aim.",
+    "Comment": ""
+  },
+  {
+    "Roll": 11,
+    "DamageCategory": "spell",
+    "FailureCategory": "opponent",
+    "Description": "The target seems to have trained against your fighting style. They were ready this time.",
+    "Comment": ""
+  },
+  {
+    "Roll": 12,
+    "DamageCategory": "spell",
+    "FailureCategory": "opponent",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to an unoccupied area on the map. It does no damage, but non-damage effects may occur.",
+    "Comment": ""
+  },
+  {
+    "Roll": 13,
+    "DamageCategory": "spell",
+    "FailureCategory": "opponent",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to an unoccupied area on the map. It does no damage, but non-damage effects may occur.",
+    "Comment": ""
+  },
+  {
+    "Roll": 14,
+    "DamageCategory": "spell",
+    "FailureCategory": "opponent",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to an unoccupied area on the map. It does no damage, but non-damage effects may occur.",
+    "Comment": ""
+  },
+  {
+    "Roll": 15,
+    "DamageCategory": "spell",
+    "FailureCategory": "opponent",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to a random target on the map. It deals 1/4 its normal damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 16,
+    "DamageCategory": "spell",
+    "FailureCategory": "opponent",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to a random target on the map. It deals 1/4 its normal damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 17,
+    "DamageCategory": "spell",
+    "FailureCategory": "opponent",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to a random target on the map. It deals 1/4 its normal damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 18,
+    "DamageCategory": "spell",
+    "FailureCategory": "opponent",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to a random target on the map. It deals 1/4 its normal damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 19,
+    "DamageCategory": "spell",
+    "FailureCategory": "opponent",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected directly at you. It deals 1/4 its normal damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 20,
+    "DamageCategory": "spell",
+    "FailureCategory": "surroundings",
+    "Description": "Your footing gives way and throws off your attack.",
+    "Comment": ""
+  },
+  {
+    "Roll": 21,
+    "DamageCategory": "spell",
+    "FailureCategory": "surroundings",
+    "Description": "Your footing gives way and throws off your attack. Roll a save DC 8 or fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 22,
+    "DamageCategory": "spell",
+    "FailureCategory": "surroundings",
+    "Description": "Your footing gives way and throws off your attack. Roll a save DC 12 or fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 23,
+    "DamageCategory": "spell",
+    "FailureCategory": "surroundings",
+    "Description": "Your footing gives way and throws off your attack. Roll a save DC 16 or fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 24,
+    "DamageCategory": "spell",
+    "FailureCategory": "surroundings",
+    "Description": "Your footing gives way and throws off your attack. Roll a save DC 20 or fall prone.",
+    "Comment": ""
+  },
+  {
+    "Roll": 25,
+    "DamageCategory": "spell",
+    "FailureCategory": "surroundings",
+    "Description": "It doesn't happen often, but you mispronounced something, made a gesture incorrectly, or used a material which wasn't quite what you thought it was.",
+    "Comment": "Roll an Intelligence save DC12 or lose the normal spell slot as if you cast the spell."
+  },
+  {
+    "Roll": 26,
+    "DamageCategory": "spell",
+    "FailureCategory": "surroundings",
+    "Description": "It doesn't happen often, but you mispronounced something, made a gesture incorrectly, or used a material which wasn't quite what you thought it was.",
+    "Comment": "Roll an Intelligence save DC12 or lose the normal spell slot as if you cast the spell."
+  },
+  {
+    "Roll": 27,
+    "DamageCategory": "spell",
+    "FailureCategory": "surroundings",
+    "Description": "It doesn't happen often, but you mispronounced something, made a gesture incorrectly, or used a material which wasn't quite what you thought it was.",
+    "Comment": "Roll an Intelligence save DC12 or lose the normal spell slot as if you cast the spell."
+  },
+  {
+    "Roll": 28,
+    "DamageCategory": "spell",
+    "FailureCategory": "surroundings",
+    "Description": "It doesn't happen often, but you mispronounced something, made a gesture incorrectly, or used a material which wasn't quite what you thought it was.",
+    "Comment": "Roll an Intelligence save DC12 or lose the normal spell slot as if you cast the spell."
+  },
+  {
+    "Roll": 29,
+    "DamageCategory": "spell",
+    "FailureCategory": "surroundings",
+    "Description": "It doesn't happen often, but you mispronounced something, made a gesture incorrectly, or used a material which wasn't quite what you thought it was.",
+    "Comment": "Roll an Intelligence save DC12 or lose the normal spell slot as if you cast the spell."
+  },
+  {
+    "Roll": 30,
+    "DamageCategory": "spell",
+    "FailureCategory": "contested",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to an unoccupied area on the map.",
+    "Comment": ""
+  },
+  {
+    "Roll": 31,
+    "DamageCategory": "spell",
+    "FailureCategory": "contested",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to an unoccupied area on the map.",
+    "Comment": ""
+  },
+  {
+    "Roll": 32,
+    "DamageCategory": "spell",
+    "FailureCategory": "contested",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to an unoccupied area on the map.",
+    "Comment": ""
+  },
+  {
+    "Roll": 33,
+    "DamageCategory": "spell",
+    "FailureCategory": "contested",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to an unoccupied area on the map.",
+    "Comment": ""
+  },
+  {
+    "Roll": 34,
+    "DamageCategory": "spell",
+    "FailureCategory": "contested",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to a random target on the map. It deals 1/4 its normal damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 35,
+    "DamageCategory": "spell",
+    "FailureCategory": "contested",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to a random target on the map. It deals 1/4 its normal damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 36,
+    "DamageCategory": "spell",
+    "FailureCategory": "contested",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to a random target on the map. It deals 1/4 its normal damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 37,
+    "DamageCategory": "spell",
+    "FailureCategory": "contested",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to a random target on the map. It deals 1/4 its normal damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 38,
+    "DamageCategory": "spell",
+    "FailureCategory": "contested",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected to a random target on the map. It deals 1/4 its normal damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 39,
+    "DamageCategory": "spell",
+    "FailureCategory": "contested",
+    "Description": "The target has some magical connection or trinket. Your spell is deflected directly at you. It deals 1/4 its normal damage.",
+    "Comment": ""
+  },
+  {
+    "Roll": 40,
+    "DamageCategory": "spell",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "The target stirs some memory. Roll a WIS save DC 10 + 1 per page of the character's backstory or become charmed/frightened until the end of your next turn.",
+    "Comment": "Use melee or spell depending on distance from target."
+  },
+  {
+    "Roll": 41,
+    "DamageCategory": "spell",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "The target really looks tough. Roll a CON save DC 10 + 2 for every hit dice higher than you the target has (-2 for every hit dice less). On a fail, become frightened until the end of your next turn.",
+    "Comment": "Use melee or range depending on distance from target."
+  },
+  {
+    "Roll": 42,
+    "DamageCategory": "spell",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "The target looks really confident. Roll an INT save DC 10 + target's INT modifier. On a fail, become frightened until the end of your next turn.",
+    "Comment": "Use melee or range depending on distance from target."
+  },
+  {
+    "Roll": 43,
+    "DamageCategory": "spell",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "Light glimmers off something metal on your target. Roll a CON save DC 10 or become blinded until the end of your next turn.",
+    "Comment": "Use melee or range depending on distance from target."
+  },
+  {
+    "Roll": 44,
+    "DamageCategory": "spell",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "Light glimmers off something metal on your target. Roll a CON save DC 12 or become blinded until the end of your next turn.",
+    "Comment": "Use melee or range depending on distance from target."
+  },
+  {
+    "Roll": 45,
+    "DamageCategory": "spell",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "Light glimmers off something metal on your target. Roll a CON save DC 16 or become blinded until the end of your next turn.",
+    "Comment": "Use melee or range depending on distance from target."
+  },
+  {
+    "Roll": 46,
+    "DamageCategory": "spell",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "Light glimmers off something metal on your target. Roll a CON save DC 20 or become blinded until the end of your next turn.",
+    "Comment": "Use melee or range depending on distance from target."
+  },
+  {
+    "Roll": 47,
+    "DamageCategory": "spell",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "Light glimmers off something metal on your target. Roll a CON save DC 20 or become blinded until the end of your next turn.",
+    "Comment": "Use melee or range depending on distance from target."
+  },
+  {
+    "Roll": 48,
+    "DamageCategory": "spell",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "Light glimmers off something metal on your target. Roll a CON save DC 20 or become blinded until the end of your next turn.",
+    "Comment": "Use melee or range depending on distance from target."
+  },
+  {
+    "Roll": 49,
+    "DamageCategory": "spell",
+    "FailureCategory": "targetGainsEffects",
+    "Description": "Light glimmers off something metal on your target. Roll a CON save DC 20 or become blinded until the end of your next turn.",
+    "Comment": "Use melee or range depending on distance from target."
+  },
+  {
+    "Roll": 50,
+    "DamageCategory": "spell",
+    "FailureCategory": "wrongTarget",
+    "Description": "The target has some magical connection or trinket which acts as a counterspell. Your spell is redirected to the nearest enemy or ally in a random direction from you. Your spell deals 1/4 its normal damage. Other effects take place if they do not cause damage.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 51,
+    "DamageCategory": "spell",
+    "FailureCategory": "wrongTarget",
+    "Description": "The target has some magical connection or trinket which acts as a counterspell. Your spell is redirected to the nearest enemy or ally in a random direction from you. Your spell deals 1/4 its normal damage. Other effects take place if they do not cause damage.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 52,
+    "DamageCategory": "spell",
+    "FailureCategory": "wrongTarget",
+    "Description": "The target has some magical connection or trinket which acts as a counterspell. Your spell is redirected to the nearest enemy or ally in a random direction from you. Your spell deals 1/4 its normal damage. Other effects take place if they do not cause damage.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 53,
+    "DamageCategory": "spell",
+    "FailureCategory": "wrongTarget",
+    "Description": "The target has some magical connection or trinket which acts as a counterspell. Your spell is redirected to the nearest enemy or ally in a random direction from you. Your spell deals 1/2 its normal damage. Other effects take place if they do not cause damage.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 54,
+    "DamageCategory": "spell",
+    "FailureCategory": "wrongTarget",
+    "Description": "The target has some magical connection or trinket which acts as a counterspell. Your spell is redirected to the nearest enemy or ally in a random direction from you. Your spell deals 1/2 its normal damage. Other effects take place if they do not cause damage.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 55,
+    "DamageCategory": "spell",
+    "FailureCategory": "wrongTarget",
+    "Description": "The target has some magical connection or trinket which acts as a counterspell. Your spell is redirected to the nearest enemy or ally in a random direction from you. Your spell deals 1/2 its normal damage. Other effects take place if they do not cause damage.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 56,
+    "DamageCategory": "spell",
+    "FailureCategory": "wrongTarget",
+    "Description": "The target has some magical connection or trinket which acts as a counterspell. Your spell is redirected to the nearest enemy or ally in a random direction from you. Your spell deals 3/4 its normal damage. Other effects take place if they do not cause damage.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 57,
+    "DamageCategory": "spell",
+    "FailureCategory": "wrongTarget",
+    "Description": "The target has some magical connection or trinket which acts as a counterspell. Your spell is redirected to the nearest enemy or ally in a random direction from you. Your spell deals 3/4 its normal damage. Other effects take place if they do not cause damage.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 58,
+    "DamageCategory": "spell",
+    "FailureCategory": "wrongTarget",
+    "Description": "The target has some magical connection or trinket which acts as a counterspell. Your spell is redirected to the nearest enemy or ally in a random direction from you. Your spell deals 3/4 its normal damage. Other effects take place if they do not cause damage.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 59,
+    "DamageCategory": "spell",
+    "FailureCategory": "wrongTarget",
+    "Description": "The target has some magical connection or trinket which acts as a counterspell. Your spell is redirected to the nearest enemy or ally in a random direction from you. Your spell deals its full normal damage. Other effects take place if they do not cause damage.",
+    "Comment": "To determine a random space, roll a D8 on square maps and a D6 on hex maps. Count the spaces clockwise around the attacker. Choose the target nearest to the character within range of reach and in the direction the dice dictate."
+  },
+  {
+    "Roll": 60,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 61,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 62,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 63,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 64,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 65,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 66,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 67,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 68,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 69,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 70,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 71,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 72,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 73,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 74,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 75,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 76,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 77,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 78,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 79,
+    "DamageCategory": "spell",
+    "FailureCategory": "equipmentDamaged",
+    "Description": "Your spell backfires and a flash of light explodes in your palm. Roll a check against your own spell save DC or become blinded until the end of your next turn.",
+    "Comment": "If you are wearing armor or a shield, it becomes scorched, giving melee opponents advantage against you until it is repaired."
+  },
+  {
+    "Roll": 80,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
+    "Comment": ""
+  },
+  {
+    "Roll": 81,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
+    "Comment": ""
+  },
+  {
+    "Roll": 82,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
+    "Comment": ""
+  },
+  {
+    "Roll": 83,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
+    "Comment": ""
+  },
+  {
+    "Roll": 84,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
+    "Comment": ""
+  },
+  {
+    "Roll": 85,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
+    "Comment": ""
+  },
+  {
+    "Roll": 86,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
+    "Comment": ""
+  },
+  {
+    "Roll": 87,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
+    "Comment": ""
+  },
+  {
+    "Roll": 88,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
+    "Comment": ""
+  },
+  {
+    "Roll": 89,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterActions",
+    "Description": "The target takes the opportunity to shout loudly for help. Add 1d4 targets to combat. The total CR of four of these creatures should not equal more than the lowest member of the party could handle. They may arrive in up to 1d6 rounds.",
+    "Comment": ""
+  },
+  {
+    "Roll": 90,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, plus a strength modifer. Roll a CON save DC 10+target's STR modifier. On a fail, you become incapacitated until the end of your next turn. Roll a CON save DC 10+target's STR modifier. On a fail, you become incapacitated until the end of your next turn. Roll a CON save DC 10+target's DEX modifier. On a fail, you become incapacitated until the end of your next turn.",
+    "Comment": "Use melee or ranged depending on distance from target."
+  },
+  {
+    "Roll": 91,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, plus a DEX modifer. Roll a DEX save DC 10+target's DEX modifier. On a fail, you fall prone.",
+    "Comment": "Use melee or ranged depending on distance from target."
+  },
+  {
+    "Roll": 92,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack as a reaction. The attack automatically deals 1d8 damage, plus a DEX modifer. Roll a CON save DC 10+target's DEX modifier. On a fail, you become stunned until the end of your next turn.",
+    "Comment": "Use melee or ranged depending on distance from target."
+  },
+  {
+    "Roll": 93,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack as a reaction. If they hit, the attack deals 1d8 damage, and an additional 1d4 damage for each 3 levels you have, plus a DEX modifer. Roll a CON save DC 10+target's DEX modifier. On a fail, you become blinded until the end of your next turn.",
+    "Comment": "Use melee or ranged depending on distance from target."
+  },
+  {
+    "Roll": 94,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack as a reaction. If they hit, the attack deals 1d8 damage, and an additional 1d4 damage for each 3 levels you have, plus a DEX modifer. Roll a CON save DC 10+target's DEX modifier. On a fail, you become deafened until the end of your next turn.",
+    "Comment": "Use melee or ranged depending on distance from target."
+  },
+  {
+    "Roll": 95,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy attacks. If they hit, Roll a CON Save DC20. On a fail: You feel no pain. Then you realize you're in shock. You see your own eyeball laying on the floor. You have disadvantage to sight-based checks for 1d20 days. You have disadvantage on all attacks for 1d4 days.",
+    "Comment": "Use melee or ranged depending on distance from target."
+  },
+  {
+    "Roll": 96,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack as a reaction with a special spell weapon. If they hit, the attack deals 1d4 damage, plus a DEX modifer. Roll a CON save DC 10+target's INT modifier. On a fail, you become poisoned for 1 round + 1 round for every 2 CR of the target.",
+    "Comment": "Use melee or ranged depending on distance from target."
+  },
+  {
+    "Roll": 97,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy gets an attack as a reaction. If they hit, the attack deals 2d6 damage, and an additional 1d6 for each 3 levels you have, plus a strength modifer.",
+    "Comment": "Use melee or ranged depending on distance from target."
+  },
+  {
+    "Roll": 98,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy attacks. If they hit, roll a CON save DC 20. On a fail: You take an arrow to the knee! God, that hurts! Oh, that's gonna have to come off... You've always wondered what it would be like to lose a leg. I guess now you'll find out. Your movement speed is permanently reduced by 15 feet while wounded or without the leg. A prosthetic leg or recovery will restore 10 feet of speed. If you choose not to have the leg removed, roll a CON save DC 20 every hour. On each fail, take 1 necrotic damage.  For each day you fail one of these saves, take 1 point of exhaustion. If you walk on the wounded leg, take one of these CON saves for every 200 feet traveled.  If you go 3 days without failing a CON save, you can keep the leg.",
+    "Comment": "Use melee or ranged depending on distance from target."
+  },
+  {
+    "Roll": 99,
+    "DamageCategory": "spell",
+    "FailureCategory": "counterAttacks",
+    "Description": "The enemy attacks. Roll a CON save DC 20. On a fail: GAH! My wrist! The weapon juts out just below your hand. When you remove the weapon, you take 1 damage per minute. Medicine DC 10 from a character with two hands, fabric, and a stick will reduce the damage to 1 health lost per hour for 1d4 days. You have disadvantage to skills and checks involving that hand for 1d20 days. At least you don't have to lose it. ",
+    "Comment": "Use melee or ranged depending on distance from target."
+  },
+  {
+    "Roll": 100,
+    "DamageCategory": "spell",
+    "FailureCategory": "ohNo",
+    "Description": "It happens to the best of us, things just go wrong. You loose your footing, fall prone and strike your head. The impact deals non-lethal bludgeoning damage equal to 5 + temporary HP + your remaining HP.",
+    "Comment": ""
   }
 ]
