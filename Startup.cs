@@ -24,6 +24,7 @@ namespace ViciousMockeryGenerator
             services.AddServerSideBlazor();
             services.AddSingleton<ViciousService>();
             services.AddSingleton<CriticalFailService>();
+            services.AddSingleton<TreasureGeneratorService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

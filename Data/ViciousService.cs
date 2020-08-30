@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using ViciousMockeryGenerator.Data.Model;
 
 namespace ViciousMockeryGenerator.Data
 {

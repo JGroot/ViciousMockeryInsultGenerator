@@ -1,0 +1,71 @@
+﻿@page "/treasure-calculator"
+
+@using ViciousMockeryGenerator.Data;
+@using ViciousMockeryGenerator.Data.Models;
+@using ViciousMockeryGenerator.Extensions;
+@inject TreasureGeneratorService TreasureGeneratorServicee;
+
+<h1>Treasure Calculator</h1>
+<hr />
+
+<EditForm Model="@treasure" OnValidSubmit="@HandleValidSubmit">
+    <ObjectGraphDataAnnotationsValidator />
+    <ValidationSummary />
+
+    <p>
+        <label>
+            Number of Players
+            <InputNumber @bind-Value="treasure.NumberOfPlayers" />
+        </label>
+    </p>
+    <p>
+        <label>
+            Average Level of Players
+            <InputNumber @bind-Value="treasure.LevelOfCharacters" />
+        </label>
+    </p>
+    @foreach (var enemy in treasure.Enemies)
+    {
+        <p>
+            <label>
+                Enemy @enemy.Id Challenge Rating
+                <InputNumber @bind-Value="enemy.ChallengeRating" />
+            </label>
+        </p>
+    }
+    <p>
+        <button type="button" @onclick="AddEnemy" class="btn btn-info">Add Enemy</button>
+    </p>
+
+    <p>
+        <button type="submit" class="btn btn-primary">Calculate Treasure</button>
+    </p>
+    <p>
+        <button type="reset" @onclick="Reset" class="btn btn-primary">Clear Form</button>
+    </p>
+</EditForm>
+
+
+@code {
+    private Treasure treasure;
+
+    protected override async Task OnInitializedAsync()
+    {
+        treasure = await Task.FromResult(new Treasure());
+    }
+
+    private void HandleValidSubmit()
+    {
+        var heyo = treasure;
+    }
+
+    private void AddEnemy()
+    {
+        treasure.Enemies.Add(new Enemy() { Id = treasure.Enemies.Count + 1 });
+    }
+
+    private void Reset()
+    {
+        treasure = new Treasure();
+    }
+}
