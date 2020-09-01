@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "enemyType": "individual",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 0,
+      "ceiling": 20
+    },
+    "pieces": [
+      {
+        "metal": "copper",
+        "roll": {
+          "numberOfDice": 5,
+          "diceType": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "enemyType": "individual",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 31,
+      "ceiling": 60
+    },
+    "pieces": [
+      {
+        "metal": "silver",
+        "roll": {
+          "numberOfDice": 4,
+          "diceType": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "enemyType": "individual",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 61,
+      "ceiling": 70
+    },
+    "pieces": [
+      {
+        "metal": "electrum",
+        "roll": {
+          "numberOfDice": 3,
+          "diceType": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "enemyType": "individual",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 71,
+      "ceiling": 95
+    },
+    "pieces": [
+      {
+        "metal": "gold",
+        "roll": {
+          "numberOfDice": 3,
+          "diceType": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "enemyType": "individual",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 96,
+      "ceiling": 100
+    },
+    "pieces": [
+      {
+        "metal": "platnium",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "enemyType": "individual",
+    "challengeRating": {
+      "floor": 5,
+      "ceiling": 10
+    },
+    "d100": {
+      "floor": 1,
+      "ceiling": 30
+    },
+    "pieces": [
+      {
+        "metal": "copper",
+        "roll": {
+          "numberOfDice": 4,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      },
+      {
+        "metal": "electrum",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 6,
+          "multiplier": 10
+        }
+      }
+    ]
+  }
+]

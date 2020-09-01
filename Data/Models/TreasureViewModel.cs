@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ViciousMockeryGenerator.Data.Models
 {
-    public class Treasure
+    public class TreasureViewModel
     {
-        public Treasure()
+        public TreasureViewModel()
         {
             Enemies = new List<Enemy>() { new Enemy() { Id = 1 } };
         }
@@ -24,11 +24,8 @@ namespace ViciousMockeryGenerator.Data.Models
         [ValidateComplexType]
         public List<Enemy> Enemies { get; set; }
 
- 
-        public int Platnium { get; set; }
-        public int Gold { get; set; }
-        public int Silver { get; set; }
-        public int Copper { get; set; }
+        public List<Piece> Pieces { get; set; }
+        public EnemyType EnemyType { get; set; }
     }
 
     public class Enemy

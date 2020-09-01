@@ -47,11 +47,11 @@
 
 
 @code {
-    private Treasure treasure;
+    private TreasureViewModel treasure;
 
     protected override async Task OnInitializedAsync()
     {
-        treasure = await Task.FromResult(new Treasure());
+        treasure = await Task.FromResult(new TreasureViewModel());
     }
 
     private void HandleValidSubmit()
@@ -66,6 +66,6 @@
 
     private void Reset()
     {
-        treasure = new Treasure();
+        treasure = new TreasureViewModel();
     }
 }
