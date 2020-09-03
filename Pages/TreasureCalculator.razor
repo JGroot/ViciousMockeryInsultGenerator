@@ -1,0 +1,90 @@
+﻿@page "/treasure-calculator"
+
+@using ViciousMockeryGenerator.Data;
+@using ViciousMockeryGenerator.Data.Models;
+@using ViciousMockeryGenerator.Extensions;
+@inject TreasureCalulatorService TreasureCalculatorServicee;
+
+<h1>Treasure Calculator</h1>
+<hr />
+
+<EditForm Model="@treasure" OnValidSubmit="@HandleValidSubmit">
+    <ObjectGraphDataAnnotationsValidator />
+    <ValidationSummary />
+    <p>@treasure.Message</p>
+    <p>
+        <label>
+            Calculation Type
+            <InputSelect @bind-Value="treasure.CalculationType">
+                @foreach (var value in Enum.GetValues(typeof(CalculationType)))
+                {
+                    <option>@value</option>
+                }
+            </InputSelect>
+        </label>
+    </p>
+        @foreach (var enemy in treasure.Enemies)
+        {
+            <p>
+                <label>
+                    Enemy @enemy.Id Challenge Rating
+                    <InputNumber @bind-Value="enemy.ChallengeRating" />
+                </label>
+            </p>
+        }
+        @if (treasure.Enemies.Count < 20)
+        {
+            <p>
+                <button id="btn-add-enemy" type="button" @onclick="AddEnemy" class="btn btn-info">Add Enemy</button>
+            </p>
+        }
+    else
+    {
+        <p>
+            <label>
+                Enemy Challenge Rating
+                <InputNumber @bind-Value="treasure.Enemies.FirstOrDefault().ChallengeRating" />
+            </label>
+        </p>
+    }
+    <p>
+        <button type="submit" class="btn btn-primary">Calculate Treasure</button>
+    </p>
+    <p>
+        <button type="reset" @onclick="Reset" class="btn btn-primary">Clear Form</button>
+    </p>
+</EditForm>
+
+
+@code {
+    private TreasureViewModel treasure;
+
+    protected override async Task OnInitializedAsync()
+    {
+        treasure = await Task.FromResult(new TreasureViewModel());
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        var heyo = treasure;
+        var results = await TreasureCalculatorServicee.CalculateTreasure(treasure);
+    }
+
+    private void AddEnemy()
+    {
+        if (treasure.Enemies.Count < 20)
+        {
+            treasure.Enemies.Add(new Enemy() { Id = treasure.Enemies.Count + 1 });
+        }
+        else
+        {
+            treasure.Message = "Enemy limit reached.";
+        }
+
+    }
+
+    private void Reset()
+    {
+        treasure = new TreasureViewModel();
+    }
+}

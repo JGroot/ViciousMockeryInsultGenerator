@@ -9,35 +9,33 @@ namespace ViciousMockeryGenerator.Data.Models
         public TreasureViewModel()
         {
             Enemies = new List<Enemy>() { new Enemy() { Id = 1 } };
+            Treasure = new List<Treasure>();
         }
 
-        [Required]
-        [Description("Number of Players")]
-        [Range(1, 1000, ErrorMessage = "Value for {0} must be between {1} and {2}.")]
-        public int NumberOfPlayers { get; set; }
 
-        [Required]
-        [Description("Average Level of Players")]
-        [Range(1, 1000, ErrorMessage = "Value for {0} must be between {1} and {2}.")]
-        public int LevelOfCharacters { get; set; }
+        public CalculationType CalculationType { get; set; }
 
         [ValidateComplexType]
         public List<Enemy> Enemies { get; set; }
 
-        public List<Piece> Pieces { get; set; }
-        public EnemyType EnemyType { get; set; }
+        public List<Treasure> Treasure { get; set; }
+        public string Message { get; set; }
+        
     }
 
     public class Enemy
     {
-        private string _strId = "zero";
-        private int _id;
-
-        public int Id { get => _id; set { _strId = value.ToString(); _id = value; } }
+        public int Id { get; set; }
 
         [Required]
         [Description("Challenge Rating")]
-        [Range(1, 1000, ErrorMessage = "Value for Enemy {0} must be between {1} and {2}.")]
-        public int ChallengeRating { get; set; }
+        [Range(0.25, 40, ErrorMessage = "Value for Enemy {0} must be between {1} and {2}.")]
+        public double ChallengeRating { get; set; }
+    }
+
+    public class Treasure
+    {
+        public Metal Metal { get; set; }
+        public int Total { get; set; }
     }
 }

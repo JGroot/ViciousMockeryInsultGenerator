@@ -5,7 +5,7 @@ namespace ViciousMockeryGenerator.Data.Models
     public class TreasureModel
     {
         public int Id { get; set; }
-        public EnemyType EnemyType { get; set; }
+        public CalculationType CalculationType { get; set; }
         public Range ChallengeRating { get; set; }
         public Range D100 { get; set; }
         public List<Piece> Pieces { get; set; }
@@ -30,8 +30,15 @@ namespace ViciousMockeryGenerator.Data.Models
         public int Multiplier { get; set; }
     }
 
+    public class EncounterMultiplier
+    {
+        public Range NumberOfMonsters { get; set; }
+        public double Muliplier { get; set; }
+    }
+
     public enum Metal
     {
+        None,
         Platnium,
         Gold,
         Silver,
@@ -39,7 +46,7 @@ namespace ViciousMockeryGenerator.Data.Models
         Copper
     }
 
-    public enum EnemyType
+    public enum CalculationType
     {
         Individual,
         Hoard

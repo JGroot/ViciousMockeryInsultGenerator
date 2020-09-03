@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "enemyType": "individual",
+    "calculationType": "individual",
     "challengeRating": {
       "floor": 0,
       "ceiling": 4
@@ -22,7 +22,7 @@
   },
   {
     "id": 2,
-    "enemyType": "individual",
+    "calculationType": "individual",
     "challengeRating": {
       "floor": 0,
       "ceiling": 4
@@ -43,7 +43,7 @@
   },
   {
     "id": 3,
-    "enemyType": "individual",
+    "calculationType": "individual",
     "challengeRating": {
       "floor": 0,
       "ceiling": 4
@@ -64,7 +64,7 @@
   },
   {
     "id": 4,
-    "enemyType": "individual",
+    "calculationType": "individual",
     "challengeRating": {
       "floor": 0,
       "ceiling": 4
@@ -85,7 +85,7 @@
   },
   {
     "id": 5,
-    "enemyType": "individual",
+    "calculationType": "individual",
     "challengeRating": {
       "floor": 0,
       "ceiling": 4
@@ -106,7 +106,7 @@
   },
   {
     "id": 5,
-    "enemyType": "individual",
+    "calculationType": "individual",
     "challengeRating": {
       "floor": 5,
       "ceiling": 10
