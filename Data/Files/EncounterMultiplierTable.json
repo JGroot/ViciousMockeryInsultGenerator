@@ -1,0 +1,44 @@
+[
+  {
+    "NumberOfMonsters": {
+      "floor": 1,
+      "ceiling": 1
+    },
+    "Muliplier": 1
+  },
+  {
+    "NumberOfMonsters": {
+      "floor": 2,
+      "ceiling": 2
+    },
+    "Muliplier": 1.5
+  },
+  {
+    "NumberOfMonsters": {
+      "floor": 3,
+      "ceiling": 6
+    },
+    "Muliplier": 2
+  },
+  {
+    "NumberOfMonsters": {
+      "floor": 7,
+      "ceiling": 10
+    },
+    "Muliplier": 2.5
+  },
+  {
+    "NumberOfMonsters": {
+      "floor": 11,
+      "ceiling": 14
+    },
+    "Muliplier": 3
+  },
+  {
+    "NumberOfMonsters": {
+      "floor": 15,
+      "ceiling": 20
+    },
+    "Muliplier": 4
+  }
+]

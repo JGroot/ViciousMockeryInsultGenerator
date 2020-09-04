@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel;
-using ViciousMockeryGenerator.Data;
+using ViciousMockeryGenerator.Data.Model;
 
 namespace ViciousMockeryGenerator.Extensions
 {

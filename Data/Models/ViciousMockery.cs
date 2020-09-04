@@ -1,4 +1,4 @@
-﻿namespace ViciousMockeryGenerator.Data
+﻿namespace ViciousMockeryGenerator.Data.Model
 {
     public class ViciousMockery
     {
