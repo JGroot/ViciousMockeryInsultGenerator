@@ -1,4 +1,11 @@
-﻿/* Style all font awesome icons */
+﻿.footer {
+    background-color: transparent;
+}
+
+.content {
+    padding-bottom: 7%;
+}
+/* Style all font awesome icons */
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -7,7 +14,11 @@
     text-decoration: none;
 }
 
-    /* Add a hover effect if you want */
-    .fa:hover {
-        opacity: 0.7;
-    }
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.error-message {
+    color: red;
+}
