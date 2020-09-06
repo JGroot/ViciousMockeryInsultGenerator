@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Threading;
 
 namespace ViciousMockeryGenerator.Data.Models
 {
@@ -9,6 +10,7 @@ namespace ViciousMockeryGenerator.Data.Models
         public TreasureViewModel()
         {
             Enemies = new List<Enemy>() { new Enemy() { Id = 1 } };
+            Treasure = new Treasure();
         }
 
 
@@ -34,8 +36,14 @@ namespace ViciousMockeryGenerator.Data.Models
 
     public class Treasure
     {
+        public Treasure()
+        {
+            Coins = new List<Coin>();
+            ArtGems = new List<ArtGem>();
+        }
+
         public List<Coin> Coins {get; set;}
-        public List<Ornament> Ornaments { get; set; }
+        public List<ArtGem> ArtGems { get; set; }
     }
 
     public class Coin
@@ -47,6 +55,7 @@ namespace ViciousMockeryGenerator.Data.Models
     public class ArtGem
     {
         public OrnamentType OrnamentType { get; set; }
-        public string Total { get; set; }
+        public int Count { get; set; }
+        public Coin TotalWorth { get; set; }
     }
 }

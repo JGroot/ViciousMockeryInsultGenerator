@@ -1,9 +1,16 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace ViciousMockeryGenerator.Data.Models
 {
     public class TreasureModel
     {
+        public TreasureModel()
+        {
+            Pieces = new List<Piece>();
+            Ornaments = new List<Ornament>();
+        }
 
         public int Id { get; set; }
         public CalculationType CalculationType { get; set; }
@@ -29,7 +36,9 @@ namespace ViciousMockeryGenerator.Data.Models
     {
         public OrnamentType OrnamentType { get; set; }
         public Roll Roll { get; set; }
-        public string SingleWorth { get; set; }
+
+        public Metal ValueCoin { get; set; }
+        public int SingleValue { get; set; }
     }
     public class Roll
     {

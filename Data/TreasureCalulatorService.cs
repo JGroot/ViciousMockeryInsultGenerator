@@ -35,38 +35,61 @@ namespace ViciousMockeryGenerator.Data
                 var rnd = new Random();
                 int roll100 = rnd.Next(1, 100);
 
-                var dto = data.Where(d =>
+                var dtos = data.Where(d =>
                             d.CalculationType == userInput.CalculationType &&
                             d.ChallengeRating.Floor <= encounterCR &&
                             d.ChallengeRating.Ceiling >= encounterCR &&
                             d.D100.Floor <= roll100 &&
-                            d.D100.Ceiling >= roll100).FirstOrDefault();
+                            d.D100.Ceiling >= roll100);
 
                 userInput.Treasure.Coins?.Clear();
-                userInput.Treasure.Ornaments?.Clear();
+                userInput.Treasure.ArtGems?.Clear();
 
-                if (dto == null || dto.Pieces == null)
+                foreach (var dto in dtos)
                 {
-                    userInput.Message = "No treasure found.";
-                    return userInput;
-                }
-              
+                    if (dto == null || (dto.Pieces == null && dto.Ornaments == null))
+                    {
+                        userInput.Message = "No treasure found.";
+                        return userInput;
+                    }
 
-                foreach (var piece in dto.Pieces)
-                {
-                    int totalRoll = 0;
-                    for (var i = 0; i < piece.Roll?.NumberOfDice; i++)
+                    foreach (var piece in dto.Pieces)
                     {
-                        var roll = rnd.Next(1, piece.Roll.DiceType);
-                        totalRoll += roll;
+                        int totalRoll = 0;
+                        for (var i = 0; i < piece.Roll?.NumberOfDice; i++)
+                        {
+                            var roll = rnd.Next(1, piece.Roll.DiceType);
+                            totalRoll += roll;
+                        }
+                        if (piece.Roll.Multiplier > 0)
+                        {
+                            totalRoll *= piece.Roll.Multiplier;
+                        }
+
+                        userInput.Treasure.Coins.Add(new Coin { Metal = piece.Metal, Total = totalRoll });
                     }
-                    if (piece.Roll.Multiplier > 0)
+
+
+                    foreach (var ornament in dto.Ornaments)
                     {
-                        totalRoll *= piece.Roll.Multiplier;
+                        int totalRoll = 0;
+                        for (var i = 0; i < ornament.Roll?.NumberOfDice; i++)
+                        {
+                            var roll = rnd.Next(1, ornament.Roll.DiceType);
+                            totalRoll += roll;
+                        }
+
+                        var art = new ArtGem()
+                        {
+                            Count = totalRoll,
+                            OrnamentType = ornament.OrnamentType,
+                            TotalWorth = new Coin() { Metal = Metal.Gold, Total = ornament.SingleValue * totalRoll }
+                        };
+
+                        userInput.Treasure.ArtGems.Add(art);
                     }
-                   
-                    userInput.Treasure.Coins.Add(new Coin { Metal = piece.Metal, Total = totalRoll });
                 }
+                return userInput;
             }
             catch (Exception ex)
             {
@@ -74,7 +97,6 @@ namespace ViciousMockeryGenerator.Data
                 return userInput;
             }
 
-            return treasure;
         }
     }
 }

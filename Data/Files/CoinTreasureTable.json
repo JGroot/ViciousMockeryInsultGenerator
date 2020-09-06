@@ -517,13 +517,14 @@
       "floor": 5,
       "ceiling": 10
     },
-    "pieces": [
+    "ornaments": [
       {
-        "metal": "art",
+        "ornamentType": "art",
+        "singleValue": 25,
+        "valueCoin": "gold",
         "roll": {
           "numberOfDice": 2,
-          "diceType": 4,
-          "multiplier": 25
+          "diceType": 4
         }
       }
     ]
