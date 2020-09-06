@@ -9,7 +9,6 @@ namespace ViciousMockeryGenerator.Data.Models
         public TreasureViewModel()
         {
             Enemies = new List<Enemy>() { new Enemy() { Id = 1 } };
-            Treasure = new List<Treasure>();
         }
 
 
@@ -18,7 +17,7 @@ namespace ViciousMockeryGenerator.Data.Models
         [ValidateComplexType]
         public List<Enemy> Enemies { get; set; }
 
-        public List<Treasure> Treasure { get; set; }
+        public Treasure Treasure { get; set; }
         public string Message { get; set; }
         
     }
@@ -35,7 +34,19 @@ namespace ViciousMockeryGenerator.Data.Models
 
     public class Treasure
     {
+        public List<Coin> Coins {get; set;}
+        public List<Ornament> Ornaments { get; set; }
+    }
+
+    public class Coin
+    {
         public Metal Metal { get; set; }
         public int Total { get; set; }
+    }
+
+    public class ArtGem
+    {
+        public OrnamentType OrnamentType { get; set; }
+        public string Total { get; set; }
     }
 }

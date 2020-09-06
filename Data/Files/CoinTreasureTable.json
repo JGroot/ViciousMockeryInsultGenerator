@@ -245,5 +245,287 @@
         }
       }
     ]
+  },
+  {
+    "id": 10,
+    "calculationType": "individual",
+    "challengeRating": {
+      "floor": 11,
+      "ceiling": 16
+    },
+    "d100": {
+      "floor": 1,
+      "ceiling": 20
+    },
+    "pieces": [
+      {
+        "metal": "silver",
+        "roll": {
+          "numberOfDice": 4,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      },
+      {
+        "metal": "gold",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "calculationType": "individual",
+    "challengeRating": {
+      "floor": 11,
+      "ceiling": 16
+    },
+    "d100": {
+      "floor": 21,
+      "ceiling": 35
+    },
+    "pieces": [
+      {
+        "metal": "electrum",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      },
+      {
+        "metal": "gold",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "calculationType": "individual",
+    "challengeRating": {
+      "floor": 11,
+      "ceiling": 16
+    },
+    "d100": {
+      "floor": 36,
+      "ceiling": 75
+    },
+    "pieces": [
+      {
+        "metal": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      },
+      {
+        "metal": "platnium",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 6,
+          "multiplier": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "calculationType": "individual",
+    "challengeRating": {
+      "floor": 11,
+      "ceiling": 16
+    },
+    "d100": {
+      "floor": 76,
+      "ceiling": 100
+    },
+    "pieces": [
+      {
+        "metal": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      },
+      {
+        "metal": "platnium",
+        "roll": {
+          "numberOfDice": 12,
+          "diceType": 6,
+          "multiplier": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "calculationType": "individual",
+    "challengeRating": {
+      "floor": 17,
+      "ceiling": 50
+    },
+    "d100": {
+      "floor": 1,
+      "ceiling": 15
+    },
+    "pieces": [
+      {
+        "metal": "electrum",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6,
+          "multiplier": 1000
+        }
+      },
+      {
+        "metal": "gold",
+        "roll": {
+          "numberOfDice": 8,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "calculationType": "individual",
+    "challengeRating": {
+      "floor": 17,
+      "ceiling": 50
+    },
+    "d100": {
+      "floor": 16,
+      "ceiling": 55
+    },
+    "pieces": [
+      {
+        "metal": "gold",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 6,
+          "multiplier": 1000
+        }
+      },
+      {
+        "metal": "platnium",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "calculationType": "individual",
+    "challengeRating": {
+      "floor": 17,
+      "ceiling": 50
+    },
+    "d100": {
+      "floor": 56,
+      "ceiling": 100
+    },
+    "pieces": [
+      {
+        "metal": "gold",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 6,
+          "multiplier": 1000
+        }
+      },
+      {
+        "metal": "platnium",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 1,
+      "ceiling": 100
+    },
+    "pieces": [
+      {
+        "metal": "copper",
+        "roll": {
+          "numberOfDice": 6,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      },
+      {
+        "metal": "silver",
+        "roll": {
+          "numberOfDice": 3,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      },
+      {
+        "metal": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6,
+          "multiplier": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 5,
+      "ceiling": 10
+    },
+    "d100": {
+      "floor": 1,
+      "ceiling": 4
+    }
+  },
+  {
+    "id": 19,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 5,
+      "ceiling": 10
+    },
+    "pieces": [
+      {
+        "metal": "art",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 4,
+          "multiplier": 25
+        }
+      }
+    ]
   }
 ]

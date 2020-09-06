@@ -43,7 +43,7 @@
     </EditForm>
     <div class="row">
         <ul class="list-group-flush">
-            @foreach (var coin in treasure.Treasure)
+            @foreach (var coin in treasure.Treasure.Coins)
             {
                 <li class="list-group-item">@coin.Total @coin.Metal</li>
             }

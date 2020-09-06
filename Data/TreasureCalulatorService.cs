@@ -42,11 +42,20 @@ namespace ViciousMockeryGenerator.Data
                             d.D100.Floor <= roll100 &&
                             d.D100.Ceiling >= roll100).FirstOrDefault();
 
-                userInput.Treasure.Clear();
+                userInput.Treasure.Coins?.Clear();
+                userInput.Treasure.Ornaments?.Clear();
+
+                if (dto == null || dto.Pieces == null)
+                {
+                    userInput.Message = "No treasure found.";
+                    return userInput;
+                }
+              
+
                 foreach (var piece in dto.Pieces)
                 {
                     int totalRoll = 0;
-                    for (var i = 0; i < piece.Roll.NumberOfDice; i++)
+                    for (var i = 0; i < piece.Roll?.NumberOfDice; i++)
                     {
                         var roll = rnd.Next(1, piece.Roll.DiceType);
                         totalRoll += roll;
@@ -55,7 +64,8 @@ namespace ViciousMockeryGenerator.Data
                     {
                         totalRoll *= piece.Roll.Multiplier;
                     }
-                    userInput.Treasure.Add(new Treasure() { Metal = piece.Metal, Total = totalRoll });
+                   
+                    userInput.Treasure.Coins.Add(new Coin { Metal = piece.Metal, Total = totalRoll });
                 }
             }
             catch (Exception ex)

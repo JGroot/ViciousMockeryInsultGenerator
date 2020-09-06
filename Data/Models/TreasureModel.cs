@@ -4,12 +4,13 @@ namespace ViciousMockeryGenerator.Data.Models
 {
     public class TreasureModel
     {
+
         public int Id { get; set; }
         public CalculationType CalculationType { get; set; }
         public Range ChallengeRating { get; set; }
         public Range D100 { get; set; }
         public List<Piece> Pieces { get; set; }
-            
+        public List<Ornament> Ornaments { get; set; }
     }
 
     public class Range
@@ -17,12 +18,19 @@ namespace ViciousMockeryGenerator.Data.Models
         public int Floor { get; set; }
         public int Ceiling { get; set; }
     }
+
     public class Piece
     {
         public Metal Metal { get; set; }
         public Roll Roll { get; set;}       
     }
 
+    public class Ornament
+    {
+        public OrnamentType OrnamentType { get; set; }
+        public Roll Roll { get; set; }
+        public string SingleWorth { get; set; }
+    }
     public class Roll
     {
         public int NumberOfDice { get; set; }
@@ -43,9 +51,14 @@ namespace ViciousMockeryGenerator.Data.Models
         Gold,
         Silver,
         Electrum,
-        Copper
+        Copper,
     }
 
+    public enum OrnamentType
+    {
+        Art,
+        Gem
+    }
     public enum CalculationType
     {
         Individual,
