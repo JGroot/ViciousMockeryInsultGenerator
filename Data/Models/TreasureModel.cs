@@ -10,6 +10,7 @@ namespace ViciousMockeryGenerator.Data.Models
         {
             Pieces = new List<Piece>();
             Ornaments = new List<Ornament>();
+            MagicItems = new List<MagicItem>();
         }
 
         public int Id { get; set; }

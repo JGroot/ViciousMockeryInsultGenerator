@@ -11,6 +11,7 @@ namespace ViciousMockeryGenerator.Data.Models
         {
             Enemies = new List<Enemy>() { new Enemy() { Id = 1 } };
             Treasure = new Treasure();
+            MagicItems = new List<string>();
         }
 
 

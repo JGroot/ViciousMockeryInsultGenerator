@@ -35,6 +35,7 @@ namespace ViciousMockeryGenerator.Data
 
                 var rnd = new Random();
                 int roll100 = rnd.Next(1, 100);
+               // int roll100 = 40; //debug
 
                 var dtos = data.Where(d =>
                             d.CalculationType == userInput.CalculationType &&
@@ -43,8 +44,16 @@ namespace ViciousMockeryGenerator.Data
                             d.D100.Floor <= roll100 &&
                             d.D100.Ceiling >= roll100);
 
+                //clear
                 userInput.Treasure.Coins?.Clear();
                 userInput.Treasure.ArtGems?.Clear();
+                userInput.MagicItems?.Clear();
+
+                if (dtos.Count() <= 0)
+                {
+                    userInput.Message = "No treasure found (or data not programmed yet).";
+                    return userInput;
+                }
 
                 foreach (var dto in dtos)
                 {
@@ -96,14 +105,22 @@ namespace ViciousMockeryGenerator.Data
                         var magicItemData = JsonConvert.DeserializeObject<List<MagicItemModel>>(File.ReadAllText(magicItemPath));
                         foreach (var magicItem in dto.MagicItems)
                         {
-                            var magicItemRollCount = RollDice(magicItem.Roll);
-                            for (var i = 0; i < magicItemRollCount; i++)
+                            var magicItemRollTimes = RollDice(magicItem.Roll);
+                            for (var i = 0; i < magicItemRollTimes; i++)
                             {
+                                var magicItemRollResult = rnd.Next(1, 100);
 
+                                var item = magicItemData.Where(m =>
+                                            m.Table == magicItem.Table &&
+                                            m.D100.Floor <= magicItemRollResult &&
+                                            m.D100.Ceiling >= magicItemRollResult)
+                                             .Select(m => m.MagicItem).FirstOrDefault();
+
+                                userInput.MagicItems.Add(item);
                             }
                         }
                     }
-                   
+
                 }
                 return userInput;
             }
