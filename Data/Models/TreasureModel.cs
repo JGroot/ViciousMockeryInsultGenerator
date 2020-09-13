@@ -18,6 +18,7 @@ namespace ViciousMockeryGenerator.Data.Models
         public Range D100 { get; set; }
         public List<Piece> Pieces { get; set; }
         public List<Ornament> Ornaments { get; set; }
+        public List<MagicItem> MagicItems { get; set; }
     }
 
     public class Range
@@ -40,6 +41,13 @@ namespace ViciousMockeryGenerator.Data.Models
         public Metal ValueCoin { get; set; }
         public int SingleValue { get; set; }
     }
+
+    public class MagicItem
+    { 
+        public string Table { get; set; }
+        public Roll Roll { get; set; }
+    }
+
     public class Roll
     {
         public int NumberOfDice { get; set; }

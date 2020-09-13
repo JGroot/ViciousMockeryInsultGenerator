@@ -18,8 +18,8 @@ namespace ViciousMockeryGenerator.Data.Models
 
         [ValidateComplexType]
         public List<Enemy> Enemies { get; set; }
-
         public Treasure Treasure { get; set; }
+        public List<string> MagicItems { get; set; }
         public string Message { get; set; }
         
     }

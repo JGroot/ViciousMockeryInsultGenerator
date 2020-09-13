@@ -51,6 +51,10 @@
             {
                 <li class="list-group-item">@artGem.Count @artGem.OrnamentType objects for a total value of @artGem.TotalWorth.Total @artGem.TotalWorth.Metal</li>
             }
+            @foreach(var magicItem in treasure.MagicItems)
+            {
+                <li class="list-group-item">@magicItem</li>
+            }
         </ul>
     </div>
 </div>

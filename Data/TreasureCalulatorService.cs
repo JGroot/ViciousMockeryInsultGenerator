@@ -18,6 +18,7 @@ namespace ViciousMockeryGenerator.Data
             string treasurePath = string.Empty;
             try
             {
+                //TODO: Cache files
                 treasurePath = AppContext.BaseDirectory + @"/Data/Files/CoinTreasureTable.json";
                 var data = JsonConvert.DeserializeObject<List<TreasureModel>>(File.ReadAllText(treasurePath));
                 var multiplierPath = AppContext.BaseDirectory + @"/Data/Files/EncounterMultiplierTable.json";
@@ -88,6 +89,21 @@ namespace ViciousMockeryGenerator.Data
 
                         userInput.Treasure.ArtGems.Add(art);
                     }
+
+                    if (dto.MagicItems.Any() && dto.MagicItems.Count > 0)
+                    {
+                        var magicItemPath = AppContext.BaseDirectory + @"/Data/Files/MagicItemTable.json";
+                        var magicItemData = JsonConvert.DeserializeObject<List<MagicItemModel>>(File.ReadAllText(magicItemPath));
+                        foreach (var magicItem in dto.MagicItems)
+                        {
+                            var magicItemRollCount = RollDice(magicItem.Roll);
+                            for (var i = 0; i < magicItemRollCount; i++)
+                            {
+
+                            }
+                        }
+                    }
+                   
                 }
                 return userInput;
             }
@@ -96,7 +112,18 @@ namespace ViciousMockeryGenerator.Data
                 userInput.Message = "Error while calculating treasure: " + ex.Message.ToString() + ". Stack Trace:  " + ex.StackTrace.ToString();
                 return userInput;
             }
+        }
 
+        private int RollDice(Roll roll)
+        {
+            var rnd = new Random();
+            int totalRoll = 0;
+            for (var i = 0; i < roll.NumberOfDice; i++)
+            {
+                var result = rnd.Next(1, roll.DiceType);
+                totalRoll += result;
+            }
+            return totalRoll;
         }
     }
 }

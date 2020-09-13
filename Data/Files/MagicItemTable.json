@@ -1,0 +1,74 @@
+[
+  {
+    "Id": 1,
+    "table":  "A",
+    "magicItem": "Potion of healing",
+    "d100": {
+      "floor": 1,
+      "ceiling": 50
+    }
+  },
+  {
+    "Id": 2,
+    "table": "A",
+    "magicItem": "Spell scroll(cantrip)",
+    "d100": {
+      "floor": 51,
+      "ceiling": 60
+    }
+  },
+  {
+    "Id": 3,
+    "table": "A",
+    "magicItem": "Potion of climbing",
+    "d100": {
+      "floor": 61,
+      "ceiling": 70
+    }
+  },
+  {
+    "Id": 4,
+    "table": "A",
+    "magicItem": "Spell scroll(1st level)",
+    "d100": {
+      "floor": 71,
+      "ceiling": 90
+    }
+  },
+  {
+    "Id": 5,
+    "table": "A",
+    "magicItem": "Spell scroll(2st level)",
+    "d100": {
+      "floor": 91,
+      "ceiling": 94
+    }
+  },
+  {
+    "Id": 6,
+    "table": "A",
+    "magicItem": "Potion of healing (greater)",
+    "d100": {
+      "floor": 95,
+      "ceiling": 98
+    }
+  },
+  {
+    "Id": 7,
+    "table": "A",
+    "magicItem": "Bag of holding",
+    "d100": {
+      "floor": 99,
+      "ceiling": 99
+    }
+  },
+  {
+    "Id": 8,
+    "table": "A",
+    "magicItem": "Driftglobe",
+    "d100": {
+      "floor": 100,
+      "ceiling": 100
+    }
+  }
+]
