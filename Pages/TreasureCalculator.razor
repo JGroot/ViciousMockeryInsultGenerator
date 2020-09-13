@@ -2,9 +2,10 @@
 
 @using ViciousMockeryGenerator.Data;
 @using ViciousMockeryGenerator.Data.Models;
-@inject TreasureCalulatorService TreasureCalculatorServicee;
+@inject TreasureCalulatorService TreasureCalculatorService;
 
 <h1>Treasure Calculator</h1>
+<p style="color: red">***This calculator is a work in progress***</p>
 <hr />
 
 <div class="container">
@@ -15,13 +16,13 @@
             <p class="error-message">@treasure.Message</p>
         </div>
         <div class="form-group">
-                <label for="calculationtype">Treasure Type:</label>
-                <InputSelect @bind-Value="treasure.CalculationType" id="calculationtype" class="form-control">
-                    @foreach (var value in Enum.GetValues(typeof(CalculationType)))
-                    {
-                        <option class="form-control">@value</option>
-                    }
-                </InputSelect>      
+            <label for="calculationtype">Treasure Type:</label>
+            <InputSelect @bind-Value="treasure.CalculationType" id="calculationtype" class="form-control">
+                @foreach (var value in Enum.GetValues(typeof(CalculationType)))
+                {
+                    <option class="form-control">@value</option>
+                }
+            </InputSelect>
         </div>
         @foreach (var enemy in treasure.Enemies)
         {
@@ -30,22 +31,30 @@
                 <InputNumber @bind-Value="enemy.ChallengeRating" class="form-control" />
             </div>
         }
-    <div class="form-group">
-        @if (treasure.Enemies.Count < 20)
-        {
-            <button id="btn-add-enemy" type="button" @onclick="AddEnemy" class="btn btn-outline-info">Add Enemy</button>
-        }
-    </div>
+        <div class="form-group">
+            @if (treasure.Enemies.Count < 20)
+            {
+                <button id="btn-add-enemy" type="button" @onclick="AddEnemy" class="btn btn-outline-info">Add Enemy</button>
+            }
+        </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Calculate Treasure</button>
-            <button type="reset" @onclick="Reset" class="btn btn-danger">Clear Form</button>        
+            <button type="reset" @onclick="Reset" class="btn btn-danger">Clear Form</button>
         </div>
     </EditForm>
     <div class="row">
         <ul class="list-group-flush">
-            @foreach (var coin in treasure.Treasure)
+            @foreach (var coin in treasure.Treasure.Coins)
             {
                 <li class="list-group-item">@coin.Total @coin.Metal</li>
+            }
+            @foreach (var artGem in treasure.Treasure.ArtGems)
+            {
+                <li class="list-group-item">@artGem.Count @artGem.OrnamentType objects for a total value of @artGem.TotalWorth.Total @artGem.TotalWorth.Metal</li>
+            }
+            @foreach(var magicItem in treasure.MagicItems)
+            {
+                <li class="list-group-item">@magicItem</li>
             }
         </ul>
     </div>
@@ -63,7 +72,8 @@
 
     private async Task HandleValidSubmit()
     {
-        var results = await TreasureCalculatorServicee.CalculateTreasure(treasure);
+        var results = await TreasureCalculatorService.CalculateTreasure(treasure);
+        treasure = results;
     }
 
     private void AddEnemy()

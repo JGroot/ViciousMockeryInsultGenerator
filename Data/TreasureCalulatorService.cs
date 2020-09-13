@@ -18,6 +18,7 @@ namespace ViciousMockeryGenerator.Data
             string treasurePath = string.Empty;
             try
             {
+                //TODO: Cache files
                 treasurePath = AppContext.BaseDirectory + @"/Data/Files/CoinTreasureTable.json";
                 var data = JsonConvert.DeserializeObject<List<TreasureModel>>(File.ReadAllText(treasurePath));
                 var multiplierPath = AppContext.BaseDirectory + @"/Data/Files/EncounterMultiplierTable.json";
@@ -34,37 +35,112 @@ namespace ViciousMockeryGenerator.Data
 
                 var rnd = new Random();
                 int roll100 = rnd.Next(1, 100);
+               // int roll100 = 40; //debug
 
-                var dto = data.Where(d =>
+                var dtos = data.Where(d =>
                             d.CalculationType == userInput.CalculationType &&
                             d.ChallengeRating.Floor <= encounterCR &&
                             d.ChallengeRating.Ceiling >= encounterCR &&
                             d.D100.Floor <= roll100 &&
-                            d.D100.Ceiling >= roll100).FirstOrDefault();
+                            d.D100.Ceiling >= roll100);
 
-                userInput.Treasure.Clear();
-                foreach (var piece in dto.Pieces)
+                //clear
+                userInput.Treasure.Coins?.Clear();
+                userInput.Treasure.ArtGems?.Clear();
+                userInput.MagicItems?.Clear();
+
+                if (dtos.Count() <= 0)
                 {
-                    int totalRoll = 0;
-                    for (var i = 0; i < piece.Roll.NumberOfDice; i++)
-                    {
-                        var roll = rnd.Next(1, piece.Roll.DiceType);
-                        totalRoll += roll;
-                    }
-                    if (piece.Roll.Multiplier > 0)
-                    {
-                        totalRoll *= piece.Roll.Multiplier;
-                    }
-                    userInput.Treasure.Add(new Treasure() { Metal = piece.Metal, Total = totalRoll });
+                    userInput.Message = "No treasure found (or data not programmed yet).";
+                    return userInput;
                 }
+
+                foreach (var dto in dtos)
+                {
+                    if (dto == null || (dto.Pieces == null && dto.Ornaments == null))
+                    {
+                        userInput.Message = "No treasure found.";
+                        return userInput;
+                    }
+
+                    foreach (var piece in dto.Pieces)
+                    {
+                        int totalRoll = 0;
+                        for (var i = 0; i < piece.Roll?.NumberOfDice; i++)
+                        {
+                            var roll = rnd.Next(1, piece.Roll.DiceType);
+                            totalRoll += roll;
+                        }
+                        if (piece.Roll.Multiplier > 0)
+                        {
+                            totalRoll *= piece.Roll.Multiplier;
+                        }
+
+                        userInput.Treasure.Coins.Add(new Coin { Metal = piece.Metal, Total = totalRoll });
+                    }
+
+
+                    foreach (var ornament in dto.Ornaments)
+                    {
+                        int totalRoll = 0;
+                        for (var i = 0; i < ornament.Roll?.NumberOfDice; i++)
+                        {
+                            var roll = rnd.Next(1, ornament.Roll.DiceType);
+                            totalRoll += roll;
+                        }
+
+                        var art = new ArtGem()
+                        {
+                            Count = totalRoll,
+                            OrnamentType = ornament.OrnamentType,
+                            TotalWorth = new Coin() { Metal = Metal.Gold, Total = ornament.SingleValue * totalRoll }
+                        };
+
+                        userInput.Treasure.ArtGems.Add(art);
+                    }
+
+                    if (dto.MagicItems.Any() && dto.MagicItems.Count > 0)
+                    {
+                        var magicItemPath = AppContext.BaseDirectory + @"/Data/Files/MagicItemTable.json";
+                        var magicItemData = JsonConvert.DeserializeObject<List<MagicItemModel>>(File.ReadAllText(magicItemPath));
+                        foreach (var magicItem in dto.MagicItems)
+                        {
+                            var magicItemRollTimes = RollDice(magicItem.Roll);
+                            for (var i = 0; i < magicItemRollTimes; i++)
+                            {
+                                var magicItemRollResult = rnd.Next(1, 100);
+
+                                var item = magicItemData.Where(m =>
+                                            m.Table == magicItem.Table &&
+                                            m.D100.Floor <= magicItemRollResult &&
+                                            m.D100.Ceiling >= magicItemRollResult)
+                                             .Select(m => m.MagicItem).FirstOrDefault();
+
+                                userInput.MagicItems.Add(item);
+                            }
+                        }
+                    }
+
+                }
+                return userInput;
             }
             catch (Exception ex)
             {
                 userInput.Message = "Error while calculating treasure: " + ex.Message.ToString() + ". Stack Trace:  " + ex.StackTrace.ToString();
                 return userInput;
             }
+        }
 
-            return treasure;
+        private int RollDice(Roll roll)
+        {
+            var rnd = new Random();
+            int totalRoll = 0;
+            for (var i = 0; i < roll.NumberOfDice; i++)
+            {
+                var result = rnd.Next(1, roll.DiceType);
+                totalRoll += result;
+            }
+            return totalRoll;
         }
     }
 }
