@@ -114,9 +114,18 @@ namespace ViciousMockeryGenerator.Data
                                             m.Table == magicItem.Table &&
                                             m.D100.Floor <= magicItemRollResult &&
                                             m.D100.Ceiling >= magicItemRollResult)
-                                             .Select(m => m.MagicItem).FirstOrDefault();
+                                            .FirstOrDefault();
 
-                                userInput.MagicItems.Add(item);
+                                if (item == null || string.IsNullOrWhiteSpace(item.MagicItem))
+                                {
+                                    var error = new MagicItemModel() { MagicItem = $"Missing data for roll {magicItemRollResult} on Magic Item Table {magicItem.Table}." };
+                                    userInput.MagicItems.Add(error);
+                                }
+                                else
+                                {
+                                    userInput.MagicItems.Add(item);
+                                }
+                           
                             }
                         }
                     }

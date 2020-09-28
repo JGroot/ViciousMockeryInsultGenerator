@@ -46,6 +46,7 @@ namespace ViciousMockeryGenerator.Data.Models
     public class MagicItem
     { 
         public string Table { get; set; }
+        public string Url { get; set; }
         public Roll Roll { get; set; }
     }
 

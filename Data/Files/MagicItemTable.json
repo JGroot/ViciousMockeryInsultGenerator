@@ -1,8 +1,9 @@
 [
   {
     "Id": 1,
-    "table":  "A",
+    "table": "A",
     "magicItem": "Potion of healing",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-healing",
     "d100": {
       "floor": 1,
       "ceiling": 50
@@ -12,6 +13,7 @@
     "Id": 2,
     "table": "A",
     "magicItem": "Spell scroll(cantrip)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
     "d100": {
       "floor": 51,
       "ceiling": 60
@@ -21,6 +23,7 @@
     "Id": 3,
     "table": "A",
     "magicItem": "Potion of climbing",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-climbing",
     "d100": {
       "floor": 61,
       "ceiling": 70
@@ -30,6 +33,7 @@
     "Id": 4,
     "table": "A",
     "magicItem": "Spell scroll(1st level)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
     "d100": {
       "floor": 71,
       "ceiling": 90
@@ -39,6 +43,7 @@
     "Id": 5,
     "table": "A",
     "magicItem": "Spell scroll(2st level)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
     "d100": {
       "floor": 91,
       "ceiling": 94
@@ -48,6 +53,7 @@
     "Id": 6,
     "table": "A",
     "magicItem": "Potion of healing (greater)",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-healing-greater",
     "d100": {
       "floor": 95,
       "ceiling": 98
@@ -57,6 +63,7 @@
     "Id": 7,
     "table": "A",
     "magicItem": "Bag of holding",
+    "url": "https://www.dndbeyond.com/magic-items/bag-of-holding",
     "d100": {
       "floor": 99,
       "ceiling": 99
@@ -66,6 +73,357 @@
     "Id": 8,
     "table": "A",
     "magicItem": "Driftglobe",
+    "url": "https://www.dndbeyond.com/magic-items/driftglobe",
+    "d100": {
+      "floor": 100,
+      "ceiling": 100
+    }
+  },
+  {
+    "Id": 9,
+    "table": "B",
+    "magicItem": "Potion of healing (greater)",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-healing-greater",
+    "d100": {
+      "floor": 1,
+      "ceiling": 15
+    }
+  },
+  {
+    "Id": 10,
+    "table": "B",
+    "magicItem": "Potion of fire breath",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-fire-breath",
+    "d100": {
+      "floor": 16,
+      "ceiling": 22
+    }
+  },
+  {
+    "Id": 11,
+    "table": "B",
+    "magicItem": "Potion of resistance",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-resistance",
+    "d100": {
+      "floor": 23,
+      "ceiling": 29
+    }
+  },
+  {
+    "Id": 12,
+    "table": "B",
+    "magicItem": "Ammunition, +1",
+    "url": "https://www.dndbeyond.com/magic-items/ammunition-1",
+    "d100": {
+      "floor": 30,
+      "ceiling": 34
+    }
+  },
+  {
+    "Id": 13,
+    "table": "B",
+    "magicItem": "Potion of animal friendship",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-animal-friendship",
+    "d100": {
+      "floor": 35,
+      "ceiling": 39
+    }
+  },
+  {
+    "Id": 14,
+    "table": "B",
+    "magicItem": "Potion of hill giant strength",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-hill-giant-strengthhttps://www.dndbeyond.com/magic-items/potion-of-hill-giant-strength",
+    "d100": {
+      "floor": 30,
+      "ceiling": 44
+    }
+  },
+  {
+    "Id": 15,
+    "table": "B",
+    "magicItem": "Potion of growth",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-growth",
+    "d100": {
+      "floor": 45,
+      "ceiling": 49
+    }
+  },
+  {
+    "Id": 16,
+    "table": "B",
+    "magicItem": "Potion of water breathing",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-water-breathing",
+    "d100": {
+      "floor": 50,
+      "ceiling": 54
+    }
+  },
+  {
+    "Id": 17,
+    "table": "B",
+    "magicItem": "Spell scroll (2nd level)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
+    "d100": {
+      "floor": 55,
+      "ceiling": 59
+    }
+  },
+  {
+    "Id": 18,
+    "table": "B",
+    "magicItem": "Spell scroll (3rd level)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
+    "d100": {
+      "floor": 60,
+      "ceiling": 64
+    }
+  },
+  {
+    "Id": 19,
+    "table": "B",
+    "magicItem": "Bag of holding",
+    "url": "https://www.dndbeyond.com/magic-items/bag-of-holding",
+    "d100": {
+      "floor": 65,
+      "ceiling": 67
+    }
+  },
+  {
+    "Id": 20,
+    "table": "B",
+    "magicItem": "Keoghtom’s ointment",
+    "url": "https://www.dndbeyond.com/magic-items/keoghtoms-ointment",
+    "d100": {
+      "floor": 68,
+      "ceiling": 70
+    }
+  },
+  {
+    "Id": 21,
+    "table": "B",
+    "magicItem": "Oil of slipperiness",
+    "url": "https://www.dndbeyond.com/magic-items/oil-of-slipperiness",
+    "d100": {
+      "floor": 71,
+      "ceiling": 73
+    }
+  },
+  {
+    "Id": 22,
+    "table": "B",
+    "magicItem": "Dust of disappearance",
+    "url": "https://www.dndbeyond.com/magic-items/dust-of-disappearance",
+    "d100": {
+      "floor": 74,
+      "ceiling": 75
+    }
+  },
+  {
+    "Id": 23,
+    "table": "B",
+    "magicItem": "Dust of dryness",
+    "url": "https://www.dndbeyond.com/magic-items/dust-of-dryness",
+    "d100": {
+      "floor": 76,
+      "ceiling": 77
+    }
+  },
+  {
+    "Id": 24,
+    "table": "B",
+    "magicItem": "Dust of sneezing and choking",
+    "url": "https://www.dndbeyond.com/magic-items/dust-of-sneezing-and-choking",
+    "d100": {
+      "floor": 78,
+      "ceiling": 79
+    }
+  },
+  {
+    "Id": 25,
+    "table": "B",
+    "magicItem": "Elemental gem",
+    "url": "https://www.dndbeyond.com/magic-items/elemental-gem",
+    "d100": {
+      "floor": 80,
+      "ceiling": 81
+    }
+  },
+  {
+    "Id": 26,
+    "table": "B",
+    "magicItem": "Philter of love",
+    "url": "https://www.dndbeyond.com/magic-items/philter-of-love",
+    "d100": {
+      "floor": 82,
+      "ceiling": 83
+    }
+  },
+  {
+    "Id": 27,
+    "table": "B",
+    "magicItem": "Alchemy jug",
+    "url": "https://www.dndbeyond.com/magic-items/alchemy-jug",
+    "d100": {
+      "floor": 84,
+      "ceiling": 84
+    }
+  },
+  {
+    "Id": 28,
+    "table": "B",
+    "magicItem": "Cap of water breathing",
+    "url": "https://www.dndbeyond.com/magic-items/cap-of-water-breathing",
+    "d100": {
+      "floor": 85,
+      "ceiling": 85
+    }
+  },
+  {
+    "Id": 29,
+    "table": "B",
+    "magicItem": "Cloak of the manta ray",
+    "url": "https://www.dndbeyond.com/magic-items/cloak-of-the-manta-ray",
+    "d100": {
+      "floor": 86,
+      "ceiling": 86
+    }
+  },
+  {
+    "Id": 30,
+    "table": "B",
+    "magicItem": "Driftglobe",
+    "url": "https://www.dndbeyond.com/magic-items/driftglobe",
+    "d100": {
+      "floor": 87,
+      "ceiling": 87
+    }
+  },
+  {
+    "Id": 31,
+    "table": "B",
+    "magicItem": "Goggles of night",
+    "url": "https://www.dndbeyond.com/magic-items/goggles-of-night",
+    "d100": {
+      "floor": 88,
+      "ceiling": 88
+    }
+  },
+  {
+    "Id": 32,
+    "table": "B",
+    "magicItem": "Helm of comprehending languages",
+    "url": "https://www.dndbeyond.com/magic-items/helm-of-comprehending-languages",
+    "d100": {
+      "floor": 89,
+      "ceiling": 89
+    }
+  },
+  {
+    "Id": 33,
+    "table": "B",
+    "magicItem": "Immovable rod",
+    "url": "https://www.dndbeyond.com/magic-items/immovable-rod",
+    "d100": {
+      "floor": 90,
+      "ceiling": 90
+    }
+  },
+  {
+    "Id": 34,
+    "table": "B",
+    "magicItem": "Lantern of revealing",
+    "url": "https://www.dndbeyond.com/magic-items/lantern-of-revealing",
+    "d100": {
+      "floor": 91,
+      "ceiling": 91
+    }
+  },
+  {
+    "Id": 35,
+    "table": "B",
+    "magicItem": "Mariner’s armor",
+    "url": "https://www.dndbeyond.com/magic-items/mariners-armor",
+    "d100": {
+      "floor": 92,
+      "ceiling": 92
+    }
+  },
+  {
+    "Id": 36,
+    "table": "B",
+    "magicItem": "Mithral armor",
+    "url": "https://www.dndbeyond.com/magic-items/mithral-armor",
+    "d100": {
+      "floor": 93,
+      "ceiling": 93
+    }
+  },
+  {
+    "Id": 37,
+    "table": "B",
+    "magicItem": "Potion of poison",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-poison",
+    "d100": {
+      "floor": 94,
+      "ceiling": 94
+    }
+  },
+  {
+    "Id": 37,
+    "table": "B",
+    "magicItem": "Ring of swimming",
+    "url": "https://www.dndbeyond.com/magic-items/ring-of-swimming",
+    "d100": {
+      "floor": 95,
+      "ceiling": 95
+    }
+  },
+  {
+    "Id": 38,
+    "table": "B",
+    "magicItem": "Robe of useful items",
+    "url": "https://www.dndbeyond.com/magic-items/robe-of-useful-items",
+    "d100": {
+      "floor": 96,
+      "ceiling": 96
+    }
+  },
+  {
+    "Id": 39,
+    "table": "B",
+    "magicItem": "Rope of climbing",
+    "url": "https://www.dndbeyond.com/magic-items/rope-of-climbing",
+    "d100": {
+      "floor": 97,
+      "ceiling": 97
+    }
+  },
+  {
+    "Id": 40,
+    "table": "B",
+    "magicItem": "Saddle of the cavalier",
+    "url": "https://www.dndbeyond.com/magic-items/saddle-of-the-cavalier",
+    "d100": {
+      "floor": 98,
+      "ceiling": 98
+    }
+  },
+  {
+    "Id": 41,
+    "table": "B",
+    "magicItem": "Wand of magic detection",
+    "url": "https://www.dndbeyond.com/magic-items/wand-of-magic-detection",
+    "d100": {
+      "floor": 99,
+      "ceiling": 99
+    }
+  },
+  {
+    "Id": 42,
+    "table": "B",
+    "magicItem": "Wand of secrets",
+    "url": "https://www.dndbeyond.com/magic-items/wand-of-secrets",
     "d100": {
       "floor": 100,
       "ceiling": 100
