@@ -5,6 +5,7 @@
         public int Id { get; set; }
         public string Table { get; set; }
         public string MagicItem { get; set; }
+        public string Url { get; set; }
         public Range D100 { get; set; }
     }
 }

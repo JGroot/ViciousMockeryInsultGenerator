@@ -54,7 +54,7 @@
             }
             @foreach(var magicItem in treasure.MagicItems)
             {
-                <li class="list-group-item">@magicItem</li>
+                <li class="list-group-item"><a href="@magicItem.Url" target="_blank">@magicItem.MagicItem</a></li>
             }
         </ul>
     </div>

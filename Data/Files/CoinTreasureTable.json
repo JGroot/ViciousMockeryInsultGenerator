@@ -599,10 +599,138 @@
     ],
     "magicItems": [
       {
-        "table":  "A",
+        "table": "A",
         "roll": {
           "numberOfDice": 1,
           "diceType": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 45,
+      "ceiling": 52
+    },
+    "ornaments": [
+      {
+        "ornamentType": "art",
+        "singleValue": 25,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 4
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "A",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 53,
+      "ceiling": 60
+    },
+    "ornaments": [
+      {
+        "ornamentType": "gem",
+        "singleValue": 50,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "A",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 61,
+      "ceiling": 65
+    },
+    "ornaments": [
+      {
+        "ornamentType": "gem",
+        "singleValue": 10,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "B",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 66,
+      "ceiling": 67
+    },
+    "ornaments": [
+      {
+        "ornamentType": "art",
+        "singleValue": 25,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 4
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "B",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 4
         }
       }
     ]

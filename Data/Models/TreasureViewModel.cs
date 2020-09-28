@@ -11,7 +11,7 @@ namespace ViciousMockeryGenerator.Data.Models
         {
             Enemies = new List<Enemy>() { new Enemy() { Id = 1 } };
             Treasure = new Treasure();
-            MagicItems = new List<string>();
+            MagicItems = new List<MagicItemModel>();
         }
 
 
@@ -20,7 +20,7 @@ namespace ViciousMockeryGenerator.Data.Models
         [ValidateComplexType]
         public List<Enemy> Enemies { get; set; }
         public Treasure Treasure { get; set; }
-        public List<string> MagicItems { get; set; }
+        public List<MagicItemModel> MagicItems { get; set; }
         public string Message { get; set; }
         
     }
@@ -59,4 +59,5 @@ namespace ViciousMockeryGenerator.Data.Models
         public int Count { get; set; }
         public Coin TotalWorth { get; set; }
     }
+
 }
