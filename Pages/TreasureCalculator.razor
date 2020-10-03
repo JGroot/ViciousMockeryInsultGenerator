@@ -8,6 +8,8 @@
 <p style="color: red">***This calculator is a work in progress***</p>
 <hr />
 
+@* TODO: Remove enemy
+    Duplicate enemy*@
 <div class="container">
     <EditForm Model="@treasure" OnValidSubmit="@HandleValidSubmit">
         <ObjectGraphDataAnnotationsValidator />
@@ -30,12 +32,26 @@
                 <label>Enemy @enemy.Id Challenge Rating:</label>
                 <InputNumber @bind-Value="enemy.ChallengeRating" class="form-control" />
             </div>
+            <div class="form-group">
+                @if (treasure.Enemies.Count > 1 && enemy.Id > 1)
+                {
+                    <button id="btn-delete-enemy" type="button" @onclick="(() => DeleteEnemy(enemy))" class="btn btn-outline-info">Remove Enemy</button>
+                }
+                @if (enemy.ChallengeRating > 0)
+                {
+                    <button id="btn-duplicate-enemy" type="button" @onclick="(() => DuplicateEnemy(enemy))" class="btn btn-outline-info">Duplicate Enemy</button>
+                }
+            </div>
         }
         <div class="form-group">
             @if (treasure.Enemies.Count < 20)
             {
                 <button id="btn-add-enemy" type="button" @onclick="AddEnemy" class="btn btn-outline-info">Add Enemy</button>
             }
+            @*@if (treasure.Enemies.Last().ChallengeRating > 0)
+            {
+                <button id="btn-duplicate-enemy" type="button" @onclick="DuplicateEnemy" class="btn btn-outline-info">Duplicate Enemy</button>
+            }*@
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Calculate Treasure</button>
@@ -52,7 +68,7 @@
             {
                 <li class="list-group-item">@artGem.Count @artGem.OrnamentType objects for a total value of @artGem.TotalWorth.Total @artGem.TotalWorth.Metal</li>
             }
-            @foreach(var magicItem in treasure.MagicItems)
+            @foreach (var magicItem in treasure.MagicItems)
             {
                 <li class="list-group-item"><a href="@magicItem.Url" target="_blank">@magicItem.MagicItem</a></li>
             }
@@ -87,6 +103,16 @@
             treasure.Message = "Enemy limit reached.";
         }
 
+    }
+
+    private void DeleteEnemy(Enemy enemy)
+    {
+        treasure.Enemies.Remove(enemy);
+    }
+
+    private void DuplicateEnemy(Enemy enemy)
+    {
+        treasure.Enemies.Add(new Enemy {Id = treasure.Enemies.Last().Id + 1, ChallengeRating = enemy.ChallengeRating });
     }
 
     private void Reset()

@@ -712,7 +712,7 @@
     },
     "d100": {
       "floor": 66,
-      "ceiling": 67
+      "ceiling": 70
     },
     "ornaments": [
       {
@@ -731,6 +731,308 @@
         "roll": {
           "numberOfDice": 1,
           "diceType": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 71,
+      "ceiling": 75
+    },
+    "ornaments": [
+      {
+        "ornamentType": "gem",
+        "singleValue": 50,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "B",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 76,
+      "ceiling": 78
+    },
+    "ornaments": [
+      {
+        "ornamentType": "gem",
+        "singleValue": 10,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "C",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 79,
+      "ceiling": 80
+    },
+    "ornaments": [
+      {
+        "ornamentType": "art",
+        "singleValue": 25,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 4
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "C",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 81,
+      "ceiling": 85
+    },
+    "ornaments": [
+      {
+        "ornamentType": "gem",
+        "singleValue": 50,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "C",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 86,
+      "ceiling": 92
+    },
+    "ornaments": [
+      {
+        "ornamentType": "art",
+        "singleValue": 25,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 4
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "F",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 93,
+      "ceiling": 97
+    },
+    "ornaments": [
+      {
+        "ornamentType": "gem",
+        "singleValue": 50,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "F",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 98,
+      "ceiling": 99
+    },
+    "ornaments": [
+      {
+        "ornamentType": "art",
+        "singleValue": 25,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 4
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "G",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 0,
+      "ceiling": 4
+    },
+    "d100": {
+      "floor": 100,
+      "ceiling": 100
+    },
+    "ornaments": [
+      {
+        "ornamentType": "gem",
+        "singleValue": 50,
+        "valueCoin": "gold",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6
+        }
+      }
+    ],
+    "magicItems": [
+      {
+        "table": "G",
+        "roll": {
+          "numberOfDice": 1,
+          "diceType": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "calculationType": "hoard",
+    "challengeRating": {
+      "floor": 5,
+      "ceiling": 10
+    },
+    "d100": {
+      "floor": 100,
+      "ceiling": 100
+    },
+    "pieces": [
+      {
+        "metal": "copper",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6,
+          "multiplier": 100
+        }
+      },
+      {
+        "metal": "silver",
+        "roll": {
+          "numberOfDice": 2,
+          "diceType": 6,
+          "multiplier": 1000
+        }
+      },
+      {
+        "metal": "gold",
+        "roll": {
+          "numberOfDice": 6,
+          "diceType": 6,
+          "multiplier": 1000
+        }
+      },
+      {
+        "metal": "platnium",
+        "roll": {
+          "numberOfDice": 3,
+          "diceType": 6,
+          "multiplier": 10
         }
       }
     ]

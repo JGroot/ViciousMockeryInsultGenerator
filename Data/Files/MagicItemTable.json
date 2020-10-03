@@ -133,7 +133,7 @@
     "Id": 14,
     "table": "B",
     "magicItem": "Potion of hill giant strength",
-    "url": "https://www.dndbeyond.com/magic-items/potion-of-hill-giant-strengthhttps://www.dndbeyond.com/magic-items/potion-of-hill-giant-strength",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-hill-giant-strength",
     "d100": {
       "floor": 30,
       "ceiling": 44
@@ -426,6 +426,516 @@
     "url": "https://www.dndbeyond.com/magic-items/wand-of-secrets",
     "d100": {
       "floor": 100,
+      "ceiling": 100
+    }
+  },
+  {
+    "Id": 43,
+    "table": "C",
+    "magicItem": "Potion of healing (superior)",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-healing-superior",
+    "d100": {
+      "floor": 1,
+      "ceiling": 15
+    }
+  },
+  {
+    "Id": 44,
+    "table": "C",
+    "magicItem": "Spell scroll (4th level)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
+    "d100": {
+      "floor": 16,
+      "ceiling": 22
+    }
+  },
+  {
+    "Id": 45,
+    "table": "C",
+    "magicItem": "Ammunition, +2",
+    "url": "https://www.dndbeyond.com/magic-items/ammunition-2",
+    "d100": {
+      "floor": 23,
+      "ceiling": 27
+    }
+  },
+  {
+    "Id": 46,
+    "table": "C",
+    "magicItem": "Potion of clairvoyance",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-clairvoyance",
+    "d100": {
+      "floor": 28,
+      "ceiling": 32
+    }
+  },
+  {
+    "Id": 47,
+    "table": "C",
+    "magicItem": "Potion of diminution",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-diminution",
+    "d100": {
+      "floor": 33,
+      "ceiling": 37
+    }
+  },
+  {
+    "Id": 48,
+    "table": "C",
+    "magicItem": "Potion of gaseous form",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-gaseous-form",
+    "d100": {
+      "floor": 38,
+      "ceiling": 42
+    }
+  },
+  {
+    "Id": 49,
+    "table": "C",
+    "magicItem": "Potion of frost giant strength",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-frost-giant-strength",
+    "d100": {
+      "floor": 43,
+      "ceiling": 47
+    }
+  },
+  {
+    "Id": 50,
+    "table": "C",
+    "magicItem": "Potion of stone giant strength",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-stone-giant-strength",
+    "d100": {
+      "floor": 48,
+      "ceiling": 52
+    }
+  },
+  {
+    "Id": 51,
+    "table": "C",
+    "magicItem": "Potion of heroism",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-heroism",
+    "d100": {
+      "floor": 53,
+      "ceiling": 57
+    }
+  },
+  {
+    "Id": 52,
+    "table": "C",
+    "magicItem": "Potion of invulnerability",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-invulnerability",
+    "d100": {
+      "floor": 58,
+      "ceiling": 62
+    }
+  },
+  {
+    "Id": 53,
+    "table": "C",
+    "magicItem": "Potion of mind reading",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-mind-reading",
+    "d100": {
+      "floor": 63,
+      "ceiling": 67
+    }
+  },
+  {
+    "Id": 54,
+    "table": "C",
+    "magicItem": "Spell scroll (5th level)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
+    "d100": {
+      "floor": 68,
+      "ceiling": 72
+    }
+  },
+  {
+    "Id": 55,
+    "table": "C",
+    "magicItem": "Elixir of health",
+    "url": "https://www.dndbeyond.com/magic-items/elixir-of-health",
+    "d100": {
+      "floor": 73,
+      "ceiling": 75
+    }
+  },
+  {
+    "Id": 56,
+    "table": "C",
+    "magicItem": "Oil of etherealness",
+    "url": "https://www.dndbeyond.com/magic-items/oil-of-etherealness",
+    "d100": {
+      "floor": 76,
+      "ceiling": 78
+    }
+  },
+  {
+    "Id": 57,
+    "table": "C",
+    "magicItem": "Potion of fire giant strength",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-fire-giant-strength",
+    "d100": {
+      "floor": 79,
+      "ceiling": 81
+    }
+  },
+  {
+    "Id": 58,
+    "table": "C",
+    "magicItem": "Quaal’s feather token",
+    "url": "https://www.dndbeyond.com/magic-items/quaals-feather-token",
+    "d100": {
+      "floor": 82,
+      "ceiling": 84
+    }
+  },
+  {
+    "Id": 59,
+    "table": "C",
+    "magicItem": "Scroll of protection",
+    "url": "https://www.dndbeyond.com/magic-items/scroll-of-protection",
+    "d100": {
+      "floor": 85,
+      "ceiling": 87
+    }
+  },
+  {
+    "Id": 60,
+    "table": "C",
+    "magicItem": "Bag of beans",
+    "url": "https://www.dndbeyond.com/magic-items/bag-of-beans",
+    "d100": {
+      "floor": 88,
+      "ceiling": 89
+    }
+  },
+  {
+    "Id": 61,
+    "table": "C",
+    "magicItem": "Bead of force",
+    "url": "https://www.dndbeyond.com/magic-items/bead-of-force",
+    "d100": {
+      "floor": 90,
+      "ceiling": 91
+    }
+  },
+  {
+    "Id": 62,
+    "table": "C",
+    "magicItem": "Chime of opening",
+    "url": "https://www.dndbeyond.com/magic-items/chime-of-opening",
+    "d100": {
+      "floor": 92,
+      "ceiling": 92
+    }
+  },
+  {
+    "Id": 63,
+    "table": "C",
+    "magicItem": "Decanter of endless water",
+    "url": "https://www.dndbeyond.com/magic-items/decanter-of-endless-water",
+    "d100": {
+      "floor": 93,
+      "ceiling": 93
+    }
+  },
+  {
+    "Id": 64,
+    "table": "C",
+    "magicItem": "Eyes of minute seeing",
+    "url": "https://www.dndbeyond.com/magic-items/eyes-of-minute-seeing",
+    "d100": {
+      "floor": 87,
+      "ceiling": 87
+    }
+  },
+  {
+    "Id": 65,
+    "table": "C",
+    "magicItem": "Folding boat",
+    "url": "https://www.dndbeyond.com/magic-items/folding-boat",
+    "d100": {
+      "floor": 95,
+      "ceiling": 95
+    }
+  },
+  {
+    "Id": 66,
+    "table": "C",
+    "magicItem": "Heward’s handy haversack",
+    "url": "https://www.dndbeyond.com/magic-items/hewards-handy-haversack",
+    "d100": {
+      "floor": 96,
+      "ceiling": 96
+    }
+  },
+  {
+    "Id": 67,
+    "table": "C",
+    "magicItem": "Horseshoes of speed",
+    "url": "https://www.dndbeyond.com/magic-items/horseshoes-of-speed",
+    "d100": {
+      "floor": 97,
+      "ceiling": 97
+    }
+  },
+  {
+    "Id": 68,
+    "table": "C",
+    "magicItem": "Necklace of fireballs",
+    "url": "https://www.dndbeyond.com/magic-items/necklace-of-fireballs",
+    "d100": {
+      "floor": 98,
+      "ceiling": 98
+    }
+  },
+  {
+    "Id": 69,
+    "table": "C",
+    "magicItem": "Periapt of health",
+    "url": "https://www.dndbeyond.com/magic-items/periapt-of-health",
+    "d100": {
+      "floor": 99,
+      "ceiling": 99
+    }
+  },
+  {
+    "Id": 70,
+    "table": "C",
+    "magicItem": "Sending stones",
+    "url": "https://www.dndbeyond.com/magic-items/sending-stones",
+    "d100": {
+      "floor": 100,
+      "ceiling": 100
+    }
+  },
+  {
+    "Id": 71,
+    "table": "D",
+    "magicItem": "Potion of healing (supreme)",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-healing-supreme",
+    "d100": {
+      "floor": 1,
+      "ceiling": 20
+    }
+  },
+  {
+    "Id": 72,
+    "table": "D",
+    "magicItem": "Potion of invisibility",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-invisibility",
+    "d100": {
+      "floor": 21,
+      "ceiling": 30
+    }
+  },
+  {
+    "Id": 73,
+    "table": "D",
+    "magicItem": "Potion of speed",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-speed",
+    "d100": {
+      "floor": 31,
+      "ceiling": 40
+    }
+  },
+  {
+    "Id": 74,
+    "table": "D",
+    "magicItem": "Spell scroll (6th level)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
+    "d100": {
+      "floor": 41,
+      "ceiling": 50
+    }
+  },
+  {
+    "Id": 75,
+    "table": "D",
+    "magicItem": "Spell scroll (7th level)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
+    "d100": {
+      "floor": 51,
+      "ceiling": 57
+    }
+  },
+  {
+    "Id": 76,
+    "table": "D",
+    "magicItem": "Ammunition, +3",
+    "url": "https://www.dndbeyond.com/magic-items/ammunition-3",
+    "d100": {
+      "floor": 58,
+      "ceiling": 62
+    }
+  },
+  {
+    "Id": 77,
+    "table": "D",
+    "magicItem": "Oil of sharpness",
+    "url": "https://www.dndbeyond.com/magic-items/oil-of-sharpness",
+    "d100": {
+      "floor": 63,
+      "ceiling": 67
+    }
+  },
+  {
+    "Id": 78,
+    "table": "D",
+    "magicItem": "Potion of flying",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-flying",
+    "d100": {
+      "floor": 68,
+      "ceiling": 72
+    }
+  },
+  {
+    "Id": 79,
+    "table": "D",
+    "magicItem": "Potion of cloud giant strength",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-cloud-giant-strength",
+    "d100": {
+      "floor": 73,
+      "ceiling": 77
+    }
+  },
+  {
+    "Id": 80,
+    "table": "D",
+    "magicItem": "Potion of longevity",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-longevity",
+    "d100": {
+      "floor": 78,
+      "ceiling": 82
+    }
+  },
+  {
+    "Id": 81,
+    "table": "D",
+    "magicItem": "Potion of vitality",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-vitality",
+    "d100": {
+      "floor": 83,
+      "ceiling": 87
+    }
+  },
+  {
+    "Id": 82,
+    "table": "D",
+    "magicItem": "Spell scroll (8th level)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
+    "d100": {
+      "floor": 88,
+      "ceiling": 92
+    }
+  },
+  {
+    "Id": 83,
+    "table": "D",
+    "magicItem": "Horseshoes of a zephyr",
+    "url": "https://www.dndbeyond.com/magic-items/horseshoes-of-a-zephyr",
+    "d100": {
+      "floor": 93,
+      "ceiling": 95
+    }
+  },
+  {
+    "Id": 84,
+    "table": "D",
+    "magicItem": "Nolzur’s marvelous pigments",
+    "url": "https://www.dndbeyond.com/magic-items/nolzurs-marvelous-pigments",
+    "d100": {
+      "floor": 96,
+      "ceiling": 98
+    }
+  },
+  {
+    "Id": 85,
+    "table": "D",
+    "magicItem": "Bag of devouring",
+    "url": "https://www.dndbeyond.com/magic-items/bag-of-devouring",
+    "d100": {
+      "floor": 99,
+      "ceiling": 99
+    }
+  },
+  {
+    "Id": 86,
+    "table": "D",
+    "magicItem": "Portable hole",
+    "url": "https://www.dndbeyond.com/magic-items/portable-hole",
+    "d100": {
+      "floor": 100,
+      "ceiling": 100
+    }
+  },
+  {
+    "Id": 87,
+    "table": "E",
+    "magicItem": "Spell scroll (8th level)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
+    "d100": {
+      "floor": 1,
+      "ceiling": 30
+    }
+  },
+  {
+    "Id": 88,
+    "table": "E",
+    "magicItem": "Potion of storm giant strength",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-storm-giant-strength",
+    "d100": {
+      "floor": 35,
+      "ceiling": 55
+    }
+  },
+  {
+    "Id": 89,
+    "table": "E",
+    "magicItem": "Potion of healing (supreme)",
+    "url": "https://www.dndbeyond.com/magic-items/potion-of-healing-supreme",
+    "d100": {
+      "floor": 56,
+      "ceiling": 70
+    }
+  },
+  {
+    "Id": 90,
+    "table": "E",
+    "magicItem": "Spell scroll (9th level)",
+    "url": "https://www.dndbeyond.com/magic-items/spell-scroll",
+    "d100": {
+      "floor": 71,
+      "ceiling": 85
+    }
+  },
+  {
+    "Id": 91,
+    "table": "E",
+    "magicItem": "Universal solvent",
+    "url": "https://www.dndbeyond.com/magic-items/universal-solvent",
+    "d100": {
+      "floor": 86,
+      "ceiling": 93
+    }
+  },
+  {
+    "Id": 92,
+    "table": "E",
+    "magicItem": "Arrow of slaying",
+    "url": "https://www.dndbeyond.com/magic-items/arrow-of-slaying",
+    "d100": {
+      "floor": 94,
+      "ceiling": 98
+    }
+  },
+  {
+    "Id": 93,
+    "table": "E",
+    "magicItem": "Sovereign glue",
+    "url": "https://www.dndbeyond.com/magic-items/sovereign-glue",
+    "d100": {
+      "floor": 99,
       "ceiling": 100
     }
   }
