@@ -8,8 +8,7 @@
 <p style="color: red">***This calculator is a work in progress***</p>
 <hr />
 
-@* TODO: Remove enemy
-    Duplicate enemy*@
+@* TODO: Update theme*@
 <div class="container">
     <EditForm Model="@treasure" OnValidSubmit="@HandleValidSubmit">
         <ObjectGraphDataAnnotationsValidator />
@@ -35,18 +34,18 @@
             <div class="form-group">
                 @if (treasure.Enemies.Count > 1 && enemy.Id > 1)
                 {
-                    <button id="btn-delete-enemy" type="button" @onclick="(() => DeleteEnemy(enemy))" class="btn btn-outline-info">Remove Enemy</button>
+                    <button id="btn-delete-enemy" type="button" @onclick="(() => DeleteEnemy(enemy))" class="btn btn-danger"><span class="oi oi-trash"></span></button>
                 }
                 @if (enemy.ChallengeRating > 0)
                 {
-                    <button id="btn-duplicate-enemy" type="button" @onclick="(() => DuplicateEnemy(enemy))" class="btn btn-outline-info">Duplicate Enemy</button>
+                    <button id="btn-duplicate-enemy" type="button" @onclick="(() => DuplicateEnemy(enemy))" class="btn btn-info"><span class="oi oi-layers"></span></button>
                 }
             </div>
         }
         <div class="form-group">
             @if (treasure.Enemies.Count < 20)
             {
-                <button id="btn-add-enemy" type="button" @onclick="AddEnemy" class="btn btn-outline-info">Add Enemy</button>
+                <button id="btn-add-enemy" type="button" @onclick="AddEnemy" class="btn btn-outline-info"><span class="oi oi-plus"></span> Add Enemy</button>
             }
             @*@if (treasure.Enemies.Last().ChallengeRating > 0)
             {
