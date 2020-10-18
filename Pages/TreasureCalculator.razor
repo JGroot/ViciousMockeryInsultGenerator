@@ -9,7 +9,7 @@
 <hr />
 
 @* TODO: Update theme*@
-<div class="container">
+<div class="container calculator-container">
     <EditForm Model="@treasure" OnValidSubmit="@HandleValidSubmit">
         <ObjectGraphDataAnnotationsValidator />
         <ValidationSummary />
@@ -28,29 +28,25 @@
         @foreach (var enemy in treasure.Enemies)
         {
             <div class="form-group">
-                <label>Enemy @enemy.Id Challenge Rating:</label>
+                <label>Enemy @enemy.Id Challenge Rating:</label><br />
                 <InputNumber @bind-Value="enemy.ChallengeRating" class="form-control" />
-            </div>
-            <div class="form-group">
-                @if (treasure.Enemies.Count > 1 && enemy.Id > 1)
-                {
-                    <button id="btn-delete-enemy" type="button" @onclick="(() => DeleteEnemy(enemy))" class="btn btn-danger"><span class="oi oi-trash"></span></button>
-                }
                 @if (enemy.ChallengeRating > 0)
                 {
-                    <button id="btn-duplicate-enemy" type="button" @onclick="(() => DuplicateEnemy(enemy))" class="btn btn-info"><span class="oi oi-layers"></span></button>
+                    <button id="btn-duplicate-enemy" type="button" @onclick="(() => DuplicateEnemy(enemy))" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="copy"><span class="oi oi-layers"></span></button>
+                }
+                @if (treasure.Enemies.Count > 1 && enemy.Id > 1)
+                {
+                    <button id="btn-delete-enemy" type="button" @onclick="(() => DeleteEnemy(enemy))" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="delete"><span class="oi oi-trash"></span></button>
                 }
             </div>
+            <br/>
         }
+        <br/>
         <div class="form-group">
             @if (treasure.Enemies.Count < 20)
             {
                 <button id="btn-add-enemy" type="button" @onclick="AddEnemy" class="btn btn-outline-info"><span class="oi oi-plus"></span> Add Enemy</button>
             }
-            @*@if (treasure.Enemies.Last().ChallengeRating > 0)
-            {
-                <button id="btn-duplicate-enemy" type="button" @onclick="DuplicateEnemy" class="btn btn-outline-info">Duplicate Enemy</button>
-            }*@
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Calculate Treasure</button>
@@ -111,7 +107,7 @@
 
     private void DuplicateEnemy(Enemy enemy)
     {
-        treasure.Enemies.Add(new Enemy {Id = treasure.Enemies.Last().Id + 1, ChallengeRating = enemy.ChallengeRating });
+        treasure.Enemies.Add(new Enemy { Id = treasure.Enemies.Last().Id + 1, ChallengeRating = enemy.ChallengeRating });
     }
 
     private void Reset()

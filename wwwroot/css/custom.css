@@ -22,3 +22,18 @@
 .error-message {
     color: red;
 }
+
+
+/* Destop only */
+@media only screen and (min-width: 768px) {
+    /*Treasure Calculator*/
+    .calculator-container input {
+        width: 35%;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .calculator-container select {
+        width: 35%;
+    }
+}

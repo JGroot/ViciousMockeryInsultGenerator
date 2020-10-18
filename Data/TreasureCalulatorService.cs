@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace ViciousMockeryGenerator.Data
 {
     public class TreasureCalulatorService
     {
+        // TODO: Refactor
         public async Task<TreasureViewModel> CalculateTreasure(TreasureViewModel userInput)
         {
             var treasure = new TreasureViewModel();
@@ -80,24 +82,8 @@ namespace ViciousMockeryGenerator.Data
                     }
 
 
-                    foreach (var ornament in dto.Ornaments)
-                    {
-                        int totalRoll = 0;
-                        for (var i = 0; i < ornament.Roll?.NumberOfDice; i++)
-                        {
-                            var roll = rnd.Next(1, ornament.Roll.DiceType);
-                            totalRoll += roll;
-                        }
-
-                        var art = new ArtGem()
-                        {
-                            Count = totalRoll,
-                            OrnamentType = ornament.OrnamentType,
-                            TotalWorth = new Coin() { Metal = Metal.Gold, Total = ornament.SingleValue * totalRoll }
-                        };
-
-                        userInput.Treasure.ArtGems.Add(art);
-                    }
+                    var ornaments = AddOrnaments(dto.Ornaments);
+                    userInput.Treasure.ArtGems.AddRange(ornaments);
 
                     if (dto.MagicItems.Any() && dto.MagicItems.Count > 0)
                     {
@@ -150,6 +136,24 @@ namespace ViciousMockeryGenerator.Data
                 totalRoll += result;
             }
             return totalRoll;
+        }
+
+        private List<ArtGem> AddOrnaments(List<Ornament> ornaments)
+        {
+            var treasures = new List<ArtGem>();
+            foreach (var ornament in ornaments)
+            {
+                int totalRoll = RollDice(ornament.Roll);
+                var treasure = new ArtGem()
+                {
+                    Count = totalRoll,
+                    OrnamentType = ornament.OrnamentType,
+                    TotalWorth = new Coin() { Metal = Metal.Gold, Total = ornament.SingleValue * totalRoll }
+                };
+
+                treasures.Add(treasure);
+            }
+            return treasures;
         }
     }
 }
