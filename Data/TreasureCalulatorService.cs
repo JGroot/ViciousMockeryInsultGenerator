@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -65,57 +63,14 @@ namespace ViciousMockeryGenerator.Data
                         return userInput;
                     }
 
-                    foreach (var piece in dto.Pieces)
-                    {
-                        int totalRoll = 0;
-                        for (var i = 0; i < piece.Roll?.NumberOfDice; i++)
-                        {
-                            var roll = rnd.Next(1, piece.Roll.DiceType);
-                            totalRoll += roll;
-                        }
-                        if (piece.Roll.Multiplier > 0)
-                        {
-                            totalRoll *= piece.Roll.Multiplier;
-                        }
+                    var coins = RollCoins(dto.Pieces);
+                    userInput.Treasure.Coins.AddRange(coins);
 
-                        userInput.Treasure.Coins.Add(new Coin { Metal = piece.Metal, Total = totalRoll });
-                    }
-
-
-                    var ornaments = AddOrnaments(dto.Ornaments);
+                    var ornaments = RollOrnaments(dto.Ornaments);
                     userInput.Treasure.ArtGems.AddRange(ornaments);
 
-                    if (dto.MagicItems.Any() && dto.MagicItems.Count > 0)
-                    {
-                        var magicItemPath = AppContext.BaseDirectory + @"/Data/Files/MagicItemTable.json";
-                        var magicItemData = JsonConvert.DeserializeObject<List<MagicItemModel>>(File.ReadAllText(magicItemPath));
-                        foreach (var magicItem in dto.MagicItems)
-                        {
-                            var magicItemRollTimes = RollDice(magicItem.Roll);
-                            for (var i = 0; i < magicItemRollTimes; i++)
-                            {
-                                var magicItemRollResult = rnd.Next(1, 100);
-
-                                var item = magicItemData.Where(m =>
-                                            m.Table == magicItem.Table &&
-                                            m.D100.Floor <= magicItemRollResult &&
-                                            m.D100.Ceiling >= magicItemRollResult)
-                                            .FirstOrDefault();
-
-                                if (item == null || string.IsNullOrWhiteSpace(item.MagicItem))
-                                {
-                                    var error = new MagicItemModel() { MagicItem = $"Missing data for roll {magicItemRollResult} on Magic Item Table {magicItem.Table}." };
-                                    userInput.MagicItems.Add(error);
-                                }
-                                else
-                                {
-                                    userInput.MagicItems.Add(item);
-                                }
-                           
-                            }
-                        }
-                    }
-
+                    var magicItems = RollMagicItems(dto.MagicItems);
+                    userInput.MagicItems.AddRange(magicItems);
                 }
                 return userInput;
             }
@@ -135,10 +90,27 @@ namespace ViciousMockeryGenerator.Data
                 var result = rnd.Next(1, roll.DiceType);
                 totalRoll += result;
             }
+            if (roll.Multiplier > 0)
+            {
+                totalRoll *= roll.Multiplier;
+            }
             return totalRoll;
         }
 
-        private List<ArtGem> AddOrnaments(List<Ornament> ornaments)
+
+        private List<Coin> RollCoins(List<Piece> pieces)
+        {
+            var coins = new List<Coin>();
+            foreach (var piece in pieces)
+            {
+                int totalRoll = RollDice(piece.Roll);
+                coins.Add(new Coin { Metal = piece.Metal, Total = totalRoll });
+            }
+            return coins;
+        }
+
+
+        private List<ArtGem> RollOrnaments(List<Ornament> ornaments)
         {
             var treasures = new List<ArtGem>();
             foreach (var ornament in ornaments)
@@ -154,6 +126,43 @@ namespace ViciousMockeryGenerator.Data
                 treasures.Add(treasure);
             }
             return treasures;
+        }
+
+        private List<MagicItemModel> RollMagicItems(List<MagicItem> magicItems)
+        {
+            var magicItemModel = new List<MagicItemModel>();
+            if (magicItems.Any() && magicItems.Count > 0)
+            {
+                var rnd = new Random();
+                var magicItemPath = AppContext.BaseDirectory + @"/Data/Files/MagicItemTable.json";
+                var magicItemData = JsonConvert.DeserializeObject<List<MagicItemModel>>(File.ReadAllText(magicItemPath));
+                foreach (var magicItem in magicItems)
+                {
+                    var magicItemRollTimes = RollDice(magicItem.Roll);
+                    for (var i = 0; i < magicItemRollTimes; i++)
+                    {
+                        var magicItemRollResult = rnd.Next(1, 100);
+
+                        var item = magicItemData.Where(m =>
+                                    m.Table == magicItem.Table &&
+                                    m.D100.Floor <= magicItemRollResult &&
+                                    m.D100.Ceiling >= magicItemRollResult)
+                                    .FirstOrDefault();
+
+                        if (item == null || string.IsNullOrWhiteSpace(item.MagicItem))
+                        {
+                            var error = new MagicItemModel() { MagicItem = $"Missing data for roll {magicItemRollResult} on Magic Item Table {magicItem.Table}." };
+                            magicItemModel.Add(error);
+                        }
+                        else
+                        {
+                            magicItemModel.Add(item);
+                        }
+
+                    }
+                }
+            }
+            return magicItemModel;
         }
     }
 }
