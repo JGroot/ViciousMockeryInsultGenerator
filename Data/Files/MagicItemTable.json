@@ -938,5 +938,45 @@
       "floor": 99,
       "ceiling": 100
     }
+  },
+  {
+    "Id": 94,
+    "table": "F",
+    "magicItem": "Weapon, +1",
+    "url": "https://www.dndbeyond.com/magic-items/weapon-1",
+    "d100": {
+      "floor": 1,
+      "ceiling": 15
+    }
+  },
+  {
+    "Id": 95,
+    "table": "F",
+    "magicItem": "Shield, +1",
+    "url": "https://www.dndbeyond.com/magic-items/shield-1",
+    "d100": {
+      "floor": 16,
+      "ceiling": 18
+    }
+  },
+  {
+    "Id": 96,
+    "table": "F",
+    "magicItem": "Sentinel shield",
+    "url": "https://www.dndbeyond.com/magic-items/sentinel-shield",
+    "d100": {
+      "floor": 19,
+      "ceiling": 21
+    }
+  },
+  {
+    "Id": 97,
+    "table": "F",
+    "magicItem": "Amulet of proof against detection and location",
+    "url": "https://www.dndbeyond.com/magic-items/amulet-of-proof-against-detection-and-location",
+    "d100": {
+      "floor": 22,
+      "ceiling": 23
+    }
   }
 ]
