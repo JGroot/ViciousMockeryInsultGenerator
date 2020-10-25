@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace ViciousMockeryGenerator.Data.Model
+namespace ViciousMockeryGenerator.Data.Models
 {
     public class CriticalFailure
     {

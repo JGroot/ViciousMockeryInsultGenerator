@@ -977,6 +977,36 @@
     "d100": {
       "floor": 22,
       "ceiling": 23
+    },
+    {
+      "Id": 98,
+      "table": "F",
+      "magicItem": "Boots of elvenkind",
+      "url": "https://www.dndbeyond.com/magic-items/boots-of-elvenkind",
+      "d100": {
+        "floor": 24,
+        "ceiling": 25
+      }
+    },
+    {
+      "Id": 99,
+      "table": "F",
+      "magicItem": "Boots of striding and springing",
+      "url": "https://www.dndbeyond.com/magic-items/boots-of-striding-and-springing",
+      "d100": {
+        "floor": 26,
+        "ceiling": 27
+      }
+    },
+    {
+      "Id": 100,
+      "table": "F",
+      "magicItem": "Bracers of archery",
+      "url": "https://www.dndbeyond.com/magic-items/bracers-of-archery",
+      "d100": {
+        "floor": 28,
+        "ceiling": 29
+      }
     }
   }
 ]
