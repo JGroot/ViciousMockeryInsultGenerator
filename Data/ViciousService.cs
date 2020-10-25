@@ -1,37 +1,30 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.IO;
 using System.Threading.Tasks;
-using ViciousMockeryGenerator.Data.Model;
+
+using ViciousMockeryGenerator.Data.Models;
 
 namespace ViciousMockeryGenerator.Data
 {
     public class ViciousService
     {
-        private static readonly string[] Nouns = new[]
-       {
-            "assface", "buttmuncher", "conehead", "buckethead", "shit", "bitch", "rat monkey", "lake of shame", "coward", "bugbrain",
-            "piece of garbage", "fun sucker", "disappointment", "slob", "insult", "prick", "piece of shit"
-        };
-
-        private static readonly string[] Adjectives = new[]
-      {
-            "sick", "dumb", "rusty", "corny", "fidgety", "impatient", "dripping", "sweaty", "utter", "useless", "complete", 
-            "crappy", "controlling", "rude", "dark", "cranky", "disappointing", "despised-by-your-own-mom"
-        };
-
-        private static readonly string[] Clause = new[]
-        {
-            "because", "and", "and so"
-        };
-
 
         public Task<ViciousMockery> GetVicious()
         {
+            var path = AppContext.BaseDirectory + @"/Data/Files/ViciousMockeryData.json";
+            var dto = JsonConvert.DeserializeObject<ViciousMockeryDTO>(File.ReadAllText(path));
+
+            var Nouns = dto.Nouns;
+            var Adjectives = dto.Adjectives;
+            var Clauses = dto.Clauses;
+
             var rnd = new Random();
             int n1Index = rnd.Next(Nouns.Length);
             int n2Index = rnd.Next(Nouns.Length);
             int a1Index = rnd.Next(Adjectives.Length);
             int a2Index = rnd.Next(Adjectives.Length);
-            int cIndex = rnd.Next(Clause.Length);
+            int cIndex = rnd.Next(Clauses.Length);
 
             string article1;
             string article2;
@@ -57,7 +50,7 @@ namespace ViciousMockeryGenerator.Data
                 article2 = "a";
             }
 
-            var viciousmock = new ViciousMockery() { Insult = $"You're {article1} {adj1} {Adjectives[a2Index]} {Nouns[n1Index]} {Clause[cIndex]} you are {article2} {Nouns[n2Index]}!!!" };
+            var viciousmock = new ViciousMockery() { Insult = $"You're {article1} {adj1} {Adjectives[a2Index]} {Nouns[n1Index]} {Clauses[cIndex]} you are {article2} {Nouns[n2Index]}!!!" };
             return Task.FromResult(viciousmock);
         }
 
