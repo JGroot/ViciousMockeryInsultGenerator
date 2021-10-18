@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
-using ViciousMockeryGenerator.Data.Models;
+using DeezNDeezTools.Data.Models;
 
-namespace ViciousMockeryGenerator.Extensions
+namespace DeezNDeezTools.Extensions
 {
     public static class Extensions
     {

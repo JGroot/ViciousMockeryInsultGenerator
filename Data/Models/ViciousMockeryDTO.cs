@@ -1,4 +1,4 @@
-﻿namespace ViciousMockeryGenerator.Data.Models
+﻿namespace DeezNDeezTools.Data.Models
 {
     public class ViciousMockeryDTO
     {
