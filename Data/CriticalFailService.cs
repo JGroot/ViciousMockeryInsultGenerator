@@ -1,12 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.IO;
-using ViciousMockeryGenerator.Data.Models;
+using DeezNDeezTools.Data.Models;
 
-namespace ViciousMockeryGenerator.Data
+namespace DeezNDeezTools.Data
 {
     public class CriticalFailService
     {
@@ -15,7 +16,7 @@ namespace ViciousMockeryGenerator.Data
             string path = string.Empty;
             try
             {
-                path = AppContext.BaseDirectory + @"/Data/Files/MeleeDamage.json";
+                path = AppContext.BaseDirectory + @"Data\Files\MeleeDamage.json";
                 return await GetFailure(path);
             }
             catch (Exception ex)
@@ -29,7 +30,7 @@ namespace ViciousMockeryGenerator.Data
         {
             try
             {
-                var path = AppContext.BaseDirectory + @"/Data/Files/RangedDamage.json";
+                var path = AppContext.BaseDirectory + @"Data\Files\RangedDamage.json";
                 return await GetFailure(path);
             }
             catch (Exception ex)
@@ -42,7 +43,7 @@ namespace ViciousMockeryGenerator.Data
         {
             try
             {
-                var path = AppContext.BaseDirectory + @"/Data/Files/SpellDamage.json";
+                var path = AppContext.BaseDirectory + @"Data\Files\SpellDamage.json";
                 return await GetFailure(path);
             }
             catch (Exception ex)
@@ -53,7 +54,13 @@ namespace ViciousMockeryGenerator.Data
 
         private async Task<CriticalFailure> GetFailure(string path)
         {
-            var json = JsonConvert.DeserializeObject<List<CriticalFailure>>(File.ReadAllText(path));
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true,
+                WriteIndented = true,
+                Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }
+            };
+            var json = JsonSerializer.Deserialize<List<CriticalFailure>>(File.ReadAllText(path), options);
             var count = json.Count;
             var rnd = new Random();
             int roll = rnd.Next(1, json.Count);

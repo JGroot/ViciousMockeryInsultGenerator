@@ -1,19 +1,19 @@
-﻿using Newtonsoft.Json;
+﻿using DeezNDeezTools.Data.Models;
 using System;
 using System.IO;
+using System.Text.Json;
 using System.Threading.Tasks;
 
-using ViciousMockeryGenerator.Data.Models;
-
-namespace ViciousMockeryGenerator.Data
+namespace DeezNDeezTools.Data
 {
     public class ViciousService
     {
 
         public Task<ViciousMockery> GetVicious()
         {
-            var path = AppContext.BaseDirectory + @"/Data/Files/ViciousMockeryData.json";
-            var dto = JsonConvert.DeserializeObject<ViciousMockeryDTO>(File.ReadAllText(path));
+            var path = AppContext.BaseDirectory + @"Data\Files\ViciousMockeryData.json";
+            var strJson = File.ReadAllText(path);
+            var dto = JsonSerializer.Deserialize<ViciousMockeryDTO>(strJson, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
 
             var Nouns = dto.Nouns;
             var Adjectives = dto.Adjectives;

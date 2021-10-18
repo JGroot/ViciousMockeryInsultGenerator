@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace ViciousMockeryGenerator.Data.Models
+namespace DeezNDeezTools.Data.Models
 {
     public class TreasureViewModel
     {

@@ -1,12 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using ViciousMockeryGenerator.Data.Models;
+using DeezNDeezTools.Data.Models;
 
-namespace ViciousMockeryGenerator.Data
+namespace DeezNDeezTools.Data
 {
     public class TreasureCalulatorService
     {
@@ -19,10 +20,17 @@ namespace ViciousMockeryGenerator.Data
             try
             {
                 //TODO: Cache files
-                treasurePath = AppContext.BaseDirectory + @"/Data/Files/CoinTreasureTable.json";
-                var data = JsonConvert.DeserializeObject<List<TreasureModel>>(File.ReadAllText(treasurePath));
+                treasurePath = AppContext.BaseDirectory + @"Data\Files\CoinTreasureTable.json";
+
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true,
+                    WriteIndented = true,
+                    Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }
+                };
+                var data = JsonSerializer.Deserialize<List<TreasureModel>>(File.ReadAllText(treasurePath), options);
                 var multiplierPath = AppContext.BaseDirectory + @"/Data/Files/EncounterMultiplierTable.json";
-                var multiplierData = JsonConvert.DeserializeObject<List<EncounterMultiplier>>(File.ReadAllText(multiplierPath));
+                var multiplierData = JsonSerializer.Deserialize<List<EncounterMultiplier>>(File.ReadAllText(multiplierPath), options);
 
                 var numberOfEnemies = userInput.Enemies.Count();
                 var multiplier = multiplierData.Where(d =>
@@ -135,7 +143,8 @@ namespace ViciousMockeryGenerator.Data
             {
                 var rnd = new Random();
                 var magicItemPath = AppContext.BaseDirectory + @"/Data/Files/MagicItemTable.json";
-                var magicItemData = JsonConvert.DeserializeObject<List<MagicItemModel>>(File.ReadAllText(magicItemPath));
+                var magicItemData = JsonSerializer.Deserialize<List<MagicItemModel>>(File.ReadAllText(magicItemPath), new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                
                 foreach (var magicItem in magicItems)
                 {
                     var magicItemRollTimes = RollDice(magicItem.Roll);
